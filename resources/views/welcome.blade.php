@@ -306,7 +306,14 @@
             </div><!--/.container-->
         </nav><!--/nav-->
     </header><!--/header-->
-
+    @if ( count( $errors ) > 0 )
+        <div class="alert alert-danger">
+            @foreach ($errors->all() as $error)
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <span><strong>Advertencia: </strong> {{ $error }}</span>
+            @endforeach
+        </div>
+    @endif
     <section id="main-slider">
         <div class="owl-carousel">
             <div class="item" style="background-image: url(portada/images/slider/learning.png);">

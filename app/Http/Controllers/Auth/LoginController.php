@@ -58,7 +58,7 @@ class LoginController extends Controller
             return redirect('home');
         } else {
             //dd('Ya ha iniciado sesion.');
-            return redirect('/');
+            return redirect('/')->withErrors(array('message' => 'Esta cuenta ha iniciado sesión en otro lugar. !!'));
         }
     }
 
