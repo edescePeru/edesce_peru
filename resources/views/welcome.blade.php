@@ -12,6 +12,24 @@
 
         <!-- Styles -->
         <style>
+        .custom-search input {
+    background: rgba(255, 255, 255, 1) url("https://image.flaticon.com/icons/svg/126/126474.svg") no-repeat scroll right center / 30px 18px;
+    padding-right: 20px;
+    transition: all 0.5s ease 0s;
+    width: 30px;
+    float:right;
+}
+
+.custom-search input {
+    width: 100%;
+}
+
+.bg-black {
+    background: #999 none repeat scroll 0 0;
+    display: inline-block;
+    padding: 3% 2%;
+    width: 100%;
+}
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -62,6 +80,7 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
         </style>
     </head>
     <body>
@@ -296,14 +315,24 @@
                                     </li> 
                                     @else
                                          <li class="scroll"><a href="{{ url('/login') }}">LOGIN</a></li> 
-                                         <li class="scroll"><a href="{{ url('/register') }}">REGISTER</a></li> 
+                                         <!-- <li class="scroll"><a href="{{ url('/register') }}">REGISTER</a></li> -->
                                     @endif
                            @endif
                         </li>  
-                                           
+                        <li class="scroll">
+                             <form>
+                                    <div class="custom-search">
+                                    <input type="text" class="form-control" placeholder="search...">
+                                    <button type="submit" id="quick-search" class="btn btn-custom"><span class="glyphicon glyphicon-search custom-glyph-color"></span></button>
+                                </div>
+                            </form>
+                        </li>                
                     </ul>
                 </div>
+                <div class="container">
+</div>
             </div><!--/.container-->
+
         </nav><!--/nav-->
     </header><!--/header-->
     @if ( count( $errors ) > 0 )

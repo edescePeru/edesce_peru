@@ -47,15 +47,20 @@ class LoginController extends Controller
         //dd(Hash::make( $request->get('password') ) );
         //dd($request->get('password'));
         //Auth::attempt(['email' => $request->get('email'), 'password' => $request->get('password')]);
+        //dd(Auth::attempt(['email' => $request->get('email'), 'password' => $request->get('password')]));
         $user = User::where('email', $request->get('email'))->get();
+
         //dd($user[0]->login);
         if ( $user[0]->email == $request->get('email') AND $user[0]->login == 0 ){
             //dd('Esta apto para loguearse');
-            $user[0]->login = 1;
-            $user[0]->save();
             // Iniciamos session
-            Auth::attempt(['email' => $request->get('email'), 'password' => $request->get('password')]);
-            return redirect('home');
+            //dd(Auth::attempt(['email' => $request->get('email'), 'password' => $request->get('password')]));
+            if (Auth::attempt(['email' => $request->get('email'), 'password' => $request->get('password')])) {
+                $user[0]->login = 1;
+                $user[0]->save();
+                return redirect('home');
+            }            
+            return redirect('login')->withErrors(array('message' => 'Credenciales incorrectas. !!'));;
         } else {
             //dd('Ya ha iniciado sesion.');
             return redirect('/')->withErrors(array('message' => 'Esta cuenta ha iniciado sesión en otro lugar. !!'));

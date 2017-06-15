@@ -7,6 +7,14 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
+                @if ( $errors->has('message') )
+                    <div class="alert alert-danger">
+                        @foreach ($errors->all() as $error)
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <span><strong>Advertencia: </strong> {{ $error }}</span>
+                        @endforeach
+                    </div>
+                @endif
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
