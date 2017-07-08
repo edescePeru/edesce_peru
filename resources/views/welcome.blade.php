@@ -13,23 +13,22 @@
         <!-- Styles -->
         <style>
         .custom-search input {
-    background: rgba(255, 255, 255, 1) url("https://image.flaticon.com/icons/svg/126/126474.svg") no-repeat scroll right center / 30px 18px;
-    padding-right: 20px;
-    transition: all 0.5s ease 0s;
-    width: 30px;
-    float:right;
-}
+            padding-right: 20px;
+            transition: all 0.5s ease 0s;
+            width: 30px;
+            float:right;
+        }
 
-.custom-search input {
-    width: 100%;
-}
+            .custom-search input {
+                width: 100%;
+            }
 
-.bg-black {
-    background: #999 none repeat scroll 0 0;
-    display: inline-block;
-    padding: 3% 2%;
-    width: 100%;
-}
+            .bg-black {
+                background: #999 none repeat scroll 0 0;
+                display: inline-block;
+                padding: 3% 2%;
+                width: 100%;
+            }
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -118,24 +117,7 @@
 
     <style>
         .mysolution{
-            color: #383338 !important;
-            
-
-            VERFICACION SI SE PUEDE VER LO QUE ESCRIBO
-
-            OJEA SI ESQUE PUEDES LEER MASOMENOS ESTE 
-
-            OJEA SI SE PUEDE VER ALMENOS COMO INTENTO ESCRIBIR 
-
-            COMO LA font-variant-east-asian: 
-
-
-                
-           HABER DEJAME VER QUE ES LO QUE ESTA QUE PASA OK
-
-
-
-
+            color: #383338 !important
         }
         .navbar.navbar-inverse{
             margin: 0px;
@@ -225,7 +207,7 @@
 <body id="home" class="homepage">
 
     <header id="header">
-        
+    
         <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
             <nav class="navbar navbar-inverse">
                 <div class="container">
@@ -241,24 +223,6 @@
                                             </a>
 
                                         </li>
-
-                                    <!--
-                                        <li>
-                                            <a href='https://twitter.com/nextech_cursos'>
-                                                <i class='fa fa-twitter'></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href='https://www.instagram.com/nextech_cursos/'>
-                                                <i class='fa fa-instagram'></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href='skype:Carlos.Benavides.Chavez?call'>
-                                                <i class='fa fa-skype'></i>
-                                            </a>
-                                        </li>
-                                    -->
                                     </ul>
                                 </div>
                         </div>
@@ -301,11 +265,11 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="scroll active"><a href="#home">INICIO</a></li>
-                        <li class="scroll"><a href="#features">NOSOTROS</a></li>
+                        
                         <li class="scroll"><a href="#services"> DEVELOPMENT</a></li>
                         <li class="scroll"><a href="#portfolio"> LEARNING</a></li>
                         <li class="scroll"><a href="#about"> SOLUTIONS</a></li>
-                        <li class="scroll"><a href="#meet-team">EQUIPO</a></li>
+                        
                         <li class="scroll"><a href="#get-in-touch">CONTACTO</a></li>     
                         <li class="scroll">
                             @if (Route::has('login'))
@@ -319,18 +283,16 @@
                                     @endif
                            @endif
                         </li>  
-                        <li class="scroll">
-                             <form>
-                                    <div class="custom-search">
-                                    <input type="text" class="form-control" placeholder="search...">
-                                    <button type="submit" id="quick-search" class="btn btn-custom"><span class="glyphicon glyphicon-search custom-glyph-color"></span></button>
-                                </div>
-                            </form>
-                        </li>                
+                                   
                     </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
                 </div>
-                <div class="container">
-</div>
+                <div class="container"></div>
             </div><!--/.container-->
 
         </nav><!--/nav-->
