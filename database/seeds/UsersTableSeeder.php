@@ -17,12 +17,11 @@ class UsersTableSeeder extends Seeder
             'login' => '0',
             'email' => 'edesceperu@gmail.com',
             'password' => bcrypt('123123'),
+            'code' => 'ADMIN01',
+            'ciudad' => '',
+            'celular' => '989985412',
+            'dni' => '20602155',
+            'role_id' => 1,
         ]);
-        //User::create([
-           // 'name' => 'Administración',
-           // 'login' => '0',
-           // 'email' => 'edesce_peru@gmail.com',
-           // 'password' => '123123'
-     //   ]);
     }
 }
