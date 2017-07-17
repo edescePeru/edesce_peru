@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
     <title>Edesce Peru | @yield('title')</title>
-
+    <link rel="icon" href="{!! asset('assets/images/icono.ico') !!}"/>@yield('page-title')
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
@@ -247,7 +247,7 @@
                 </li>
 
             @else
-                <li class="@yield('contact')">
+                <li class="@yield('student')">
                     <a href="{{ url('/students') }}">
                         <i class="menu-icon fa fa-picture-o"></i>
                         <span class="menu-text">Alumnos</span>
@@ -255,171 +255,15 @@
 
                     <b class="arrow"></b>
                 </li>
-                <li class="@yield('manage-event')">
-                    <a href="#" class="dropdown-toggle">
-                        <i class="menu-icon fa fa-globe"></i>
-							<span class="menu-text">
-								Gestionar alumnos
-							</span>
-
-                        <b class="arrow fa fa-angle-down"></b>
+                <li class="@yield('subject')">
+                    <a href="{{ url('/subjects') }}">
+                        <i class="menu-icon fa fa-picture-o"></i>
+                        <span class="menu-text">Cursos</span>
                     </a>
 
                     <b class="arrow"></b>
-
-                    <ul class="submenu">
-
-                        <li class="@yield('manage-papers')">
-                            <a href="{{ url('/papers') }}">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Listar ponencias
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="@yield('manage-speakers')">
-                            <a href="{{ url('admin/ponentes') }}">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Gestionar ponentes
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="@yield('manage-itinerary')">
-                            <a href="{{ url('admin/itinerario') }}">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Gestionar itinerario
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-                    </ul>
                 </li>
-                <li class="@yield('manage-inscription')">
-                    <a href="#" class="dropdown-toggle">
-                        <i class="menu-icon fa fa-calendar"></i>
-							<span class="menu-text">
-								Gestionar inscripción
-							</span>
 
-                        <b class="arrow fa fa-angle-down"></b>
-                    </a>
-
-                    <b class="arrow"></b>
-
-                    <ul class="submenu">
-
-                        <li class="@yield('manage-record')">
-                            <a href="{{ url('/record') }}">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Historial
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="@yield('make-inscription')">
-                            <a href="{{ url('/inscription') }}">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Realizar inscripción
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="@yield('make-payment')">
-                            <a href="{{ url('admin/pagos') }}">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Realizar pago
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-                    </ul>
-                </li>
-                <li class="@yield('manage-assistance')">
-                    <a href="#" class="dropdown-toggle">
-                        <i class="menu-icon fa fa-clock-o"></i>
-							<span class="menu-text">
-								Gestionar asistencia
-							</span>
-
-                        <b class="arrow fa fa-angle-down"></b>
-                    </a>
-
-                    <b class="arrow"></b>
-
-                    <ul class="submenu">
-
-                        <li class="@yield('milestone')">
-                            <a href="{{ url('admin/hitos') }}">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Gestionar hitos
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-                    </ul>
-                </li>
-                <li class="@yield('manage-admin')">
-                    <a href="#" class="dropdown-toggle">
-                        <i class="menu-icon fa fa-user"></i>
-							<span class="menu-text">
-								Gestionar admin
-							</span>
-
-                        <b class="arrow fa fa-angle-down"></b>
-                    </a>
-
-                    <b class="arrow"></b>
-
-                    <ul class="submenu">
-
-                        <li class="@yield('list-admin')">
-                            <a href="{{ url('admin/listar') }}">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Listar admin
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="@yield('make-admin')">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Crear admin
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-                    </ul>
-                </li>
-                <li class="@yield('manage-notification')">
-                    <a href="{{ url('admin/notification') }}">
-                        <i class="menu-icon fa fa-usd"></i>
-							<span class="menu-text">
-								Notificaciones
-							</span>
-                    </a>
-
-                </li>
-                <li class="@yield('manage-certification')">
-                    <a href="{{ url('admin/certification') }}">
-                        <i class="menu-icon fa fa-calendar"></i>
-							<span class="menu-text">
-								Gest. certificados
-							</span>
-                    </a>
-                <li class="@yield('manage-chat')">
-                    <a href="{{ url('/chat') }}">
-                        <i class="menu-icon fa fa-usd"></i>
-							<span class="menu-text">
-								Chat Realtime
-							</span>
-                    </a>
-                </li>
             @endif
         </ul><!-- /.nav-list -->
 

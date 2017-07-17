@@ -1,25 +1,25 @@
 @extends('layouts.panel')
 
-@section('title','Alumnos')
+@section('title','Cursos')
 
 {{--@section('student','open')--}}
 
-@section('student','active')
+@section('subject','active')
 @section('menu-active')
     <li>
         <i class="ace-icon fa fa-home home-icon"></i>
         <a href="#">Mantenedores</a>
     </li>
-    <li class="active">Alumnos</li>
+    <li class="active">Cursos</li>
 @endsection
 @section('content')
     <div id="path" data-path="{{ asset('/') }}"></div>
     <div class="page-header">
         <h1>
-            Historial de alumnos
+            Historial de cursos
             <small>
                 <i class="ace-icon fa fa-angle-double-right"></i>
-                Visualizando los alumnos
+                Visualizando los cursos
             </small>
         </h1>
     </div>
@@ -27,7 +27,7 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <button class="btn btn-success btn-sm" data-register >Nuevo alumno</button>
+            <button class="btn btn-success btn-sm" data-register >Nuevo curso</button>
             <div class="space-6"></div>
             <div class=''>
                 <table id="dynamic-table" class="table table-striped table-bordered table-hover">
@@ -53,7 +53,7 @@
 
                     <tbody>
 
-                    @foreach( $students as $student )
+                    {{--@foreach( $students as $student )
                         <tr>
                             <td class="center">
                                 <label class="pos-rel">
@@ -87,8 +87,7 @@
 
 
                         </tr>
-                    @endforeach
-
+                    @endforeach--}}
 
                     </tbody>
                 </table>
@@ -103,12 +102,12 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title">
-                        <h4>Nuevo alumno</h4>
+                        <h4>Nuevo curso</h4>
                     </div>
                 </div>
                 <div id="message">
                 </div>
-                <form id="formRegister" action="{{ url('student/registrar') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
+                <form id="formRegister" action="{{ url('subject/registrar') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
                     <div class="modal-body">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
 
@@ -559,6 +558,6 @@
 
         })
     </script>
-    <script src="{{ asset('js/student/index.js') }}"></script>
+    <script src="{{ asset('js/subject/index.js') }}"></script>
 @endsection
 
