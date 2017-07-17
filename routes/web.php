@@ -22,4 +22,6 @@ Auth::routes();
 Route::post('/login', [ 'as' => 'login', 'uses' => 'Auth\LoginController@login']);
 Route::post('/logout', [ 'as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 
+Route::get('/students', 'StudentController@index');
+Route::post('/student/registrar', 'StudentController@create');
 Route::get('/home', 'HomeController@index')->name('home');

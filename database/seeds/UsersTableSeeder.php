@@ -14,12 +14,14 @@ class UsersTableSeeder extends Seeder
     {
         User::create([
             'name' => 'Administración',
+            'surname' => '',
             'login' => '0',
             'email' => 'edesceperu@gmail.com',
             'password' => bcrypt('123123'),
             'code' => 'ADMIN01',
-            'ciudad' => '',
-            'celular' => '989985412',
+            'country' => '',
+            'city' => '',
+            'mobile' => '989985412',
             'dni' => '20602155',
             'role_id' => 1,
         ]);

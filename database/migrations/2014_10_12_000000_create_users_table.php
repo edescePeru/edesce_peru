@@ -21,16 +21,20 @@ class CreateUsersTable extends Migration
 
             // Other fields
             $table->string('name');
+            $table->string('surname');
             $table->string('email')->unique();
             $table->string('code')->unique();
-            $table->string('ciudad');
-            $table->string('celular');
+            $table->string('country');
+            $table->string('city');
+            $table->string('mobile');
             $table->string('dni')->unique();;
 
             $table->integer('role_id')->unsigned();
             $table->foreign('role_id')->references('id')->on('roles');
             $table->rememberToken();
             $table->timestamps();
+
+            $table->softDeletes();
         });
     }
 
