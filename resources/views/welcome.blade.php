@@ -219,7 +219,7 @@
                                 <div class="header_top_bar_socs" style="margin: 0 0 0 40px;">
                                     <ul class="clearfix">
                                         <li>
-                                            <a href='https://www.facebook.com/EDESCE'>
+                                            <a target="_blank" href='https://www.facebook.com/EDESCE'>
                                                 <img src="{{ asset('portada/images/facebook.png') }}" alt="" style="width: 18px; ">  
                                             </a>
 
@@ -260,7 +260,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html" style="padding: 2px;"><img src="{{ asset('portada/images/logo4.png') }}" alt="logo" ></a>
+                    <a class="navbar-brand" href="#" style="padding: 2px;"><img src="{{ asset('portada/images/logo4.png') }}" alt="logo" ></a>
                 </div>
                 
                 <div class="collapse navbar-collapse navbar-right">

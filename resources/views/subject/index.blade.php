@@ -40,20 +40,14 @@
                             </label>
                         </th>
                         <th>Nombre</th>
-                        <th>Apellidos</th>
-                        <th>
-                            Email
-                        </th>
-                        <th class="hidden-480">País</th>
-                        <th class="hidden-480">Ciudad</th>
-                        <th class="hidden-480">Codigo</th>
+                        <th>Descripción</th>
                         <th class="hidden-480">Accion</th>
                     </tr>
                     </thead>
 
                     <tbody>
 
-                    {{--@foreach( $students as $student )
+                    @foreach( $subjects as $subject )
                         <tr>
                             <td class="center">
                                 <label class="pos-rel">
@@ -61,33 +55,20 @@
                                     <span class="lbl"></span>
                                 </label>
                             </td>
+
+                            <td>{{ $subject->name }}</td>
+
+                            <td>{{  $subject->description }}</td>
+
                             <td>
-
-                                <p>{{ $student->name }}</p></td>
-
-                            <td>{{ $student->surname }}</td>
-
-                            <td>{{  $student->email }}</td>
-
-                            <td class="center">
-                                {{  $student->country }}
-                            </td>
-                            <td class="center">
-                                {{  $student->city }}
-                            </td>
-                            <td>
-                                {{  $student->code }}
-
-                            </td>
-                            <td>
-                                <button class="btn btn-warning btn-sm" data-edit="{{ $student->id }}" data-name="{{ $student->name }}" data-email="{{ $student->email }}">Editar
+                                <button class="btn btn-warning btn-sm" data-edit="{{ $subject->id }}" data-name="{{ $subject->name }}" data-email="{{ $subject->description }}">Editar
                                 </button>
-                                <button class="btn btn-danger btn-sm" data-delete="{{ $student->id }}" data-name="{{ $student->name }}">Eliminar</button>
+                                <button class="btn btn-danger btn-sm" data-delete="{{ $subject->id }}" data-name="{{ $subject->name }}">Eliminar</button>
                             </td>
 
 
                         </tr>
-                    @endforeach--}}
+                    @endforeach
 
                     </tbody>
                 </table>
@@ -118,53 +99,9 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3" for="surname">Apellidos<span class="required">*</span></label>
+                            <label class="control-label col-md-3" for="description">Descripción</label>
                             <div class="col-md-8">
-                                <input name="surname" id="surname" class="form-control inside" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="email">Email<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="email" id="email" class="form-control inside" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="password">Password<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="password" id="password" class="form-control inside" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="code">Código único<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="code" id="code" class="form-control inside" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="country">País<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="country" id="country" class="form-control inside" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="city">Ciudad<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="city" id="city" class="form-control inside" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="mobile">Celular<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="mobile" id="mobile" class="form-control inside" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="dni">Doc. Identidad<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="dni" id="dni" class="form-control inside" required>
+                                <input name="description" id="description" class="form-control inside">
                             </div>
                         </div>
 
@@ -177,7 +114,7 @@
                         <div class="modal-footer">
                             <div class="text-center">
                                 <button class="btn btn-sm btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-                                <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Registrar ponente</button>
+                                <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Registrar curso</button>
                             </div>
                         </div>
                     </div>
@@ -335,7 +272,7 @@
                                 bAutoWidth: false,
                                 "aoColumns": [
                                     { "bSortable": false },
-                                    null, null,null, null, null, null,null
+                                    null, null,null
                                 ],
                                 "aaSorting": [],
 

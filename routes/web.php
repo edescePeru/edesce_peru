@@ -24,4 +24,8 @@ Route::post('/logout', [ 'as' => 'logout', 'uses' => 'Auth\LoginController@logou
 
 Route::get('/students', 'StudentController@index');
 Route::post('/student/registrar', 'StudentController@create');
+
+Route::get('/subjects', 'SubjectController@index');
+Route::post('/subject/registrar', 'SubjectController@create');
+
 Route::get('/home', 'HomeController@index')->name('home');

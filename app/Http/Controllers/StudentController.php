@@ -24,7 +24,7 @@ class StudentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create( Request $request)
+    public function create( Request $request )
     {
         if( Auth()->user()->role_id != 1 )
             return redirect('/');

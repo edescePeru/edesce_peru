@@ -12,9 +12,9 @@ jQuery(function (){
     $('[data-edit]').on('click',showModalEdit);
     $('[data-delete]').on('click',showModalDelete);
 
-    $('#formRegister').on('submit',ponent);
-    $('#formEdit').on('submit',ponent);
-    $('#formDelete').on('submit',ponent);
+    $('#formRegister').on('submit',subject);
+    $('#formEdit').on('submit',subject);
+    $('#formDelete').on('submit',subject);
 });
 
 var modalRegister;
@@ -71,7 +71,7 @@ function showModalDelete()
     modalDelete.modal('show');
 }
 
-function ponent()
+function subject()
 {
     event.preventDefault();
     $.ajax({
