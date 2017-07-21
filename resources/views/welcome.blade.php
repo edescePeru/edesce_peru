@@ -109,7 +109,7 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->       
 
-    <link rel="shortcut icon" href="{{ asset('portada/images/ico/edesce.png') }}">
+    <link rel="icon" href="{{ asset('portada/images/ico/edesce.png') }}" type="image">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('portada/images/ico/apple-touch-icon-144-precomposed.png') }}">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('portada/images/ico/apple-touch-icon-114-precomposed.png') }}">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('portada/images/ico/apple-touch-icon-72-precomposed.png') }}">
@@ -220,10 +220,10 @@
                                     <ul class="clearfix">
                                         <li>
                                             <a target="_blank" href='https://www.facebook.com/EDESCE'>
-                                                <img src="{{ asset('portada/images/facebook.png') }}" alt="" style="width: 18px; ">  
+                                                <img src="{{ asset('portada/images/facebook.png') }}" alt="" style="width: 18px; ">
                                             </a>
-
                                         </li>
+
                                     </ul>
                                 </div>
                         </div>
@@ -244,7 +244,9 @@
                             <ul class="top_bar_info clearfix derecha">
                                 <li class="hidden-infos">
                                     <i class="fa fa-building-o"></i> Dirección: Jr. Gamarra Nº 553 oficina 6
+
                                 </li>
+
                             </ul>
                         </div>
                     </div>
@@ -271,7 +273,9 @@
                         <li class="scroll"><a href="#portfolio"> LEARNING</a></li>
                         <li class="scroll"><a href="#about"> SOLUTIONS</a></li>
                         
-                        <li class="scroll"><a href="#get-in-touch">CONTACTO</a></li>     
+                        <li class="scroll"><a href="#get-in-touch">CONTACTO</a></li>
+
+
                         <li class="scroll">
                             @if (Route::has('login'))
                                     @if (Auth::check())
@@ -293,10 +297,16 @@
                         <button type="submit" class="btn btn-default">Submit</button>
                     </form>
                 </div>
-                <div class="container"></div>
-            </div><!--/.container-->
 
+            </div><!--/.container-->
+            <div class="container"><div style="width:10px" id="google_translate_element"></div><script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                    }
+                </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
         </nav><!--/nav-->
+
     </header><!--/header-->
     @if ( count( $errors ) > 0 )
         <div class="alert alert-danger">
@@ -307,9 +317,9 @@
         </div>
     @endif
     <section id="main-slider">
-        <div class="owl-carousel">
+        <div class="owl-carousel" style="margin-top: 20px">
             <div class="item" style="background-image: url(portada/images/slider/learning.png);">
-                
+
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
