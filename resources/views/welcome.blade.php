@@ -438,7 +438,7 @@
 
                     <div class="media service-box wow fadeInRight">
                         <div class="pull-left">
-                            <i class="fa fa-pie-chart"></i>
+                            <i class="fa fa-bullseye"></i>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">EDESCE - Store</h4>
@@ -468,7 +468,7 @@
 
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Nuestros servicios</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p class="text-center wow fadeInDown">Tenemos a su disposición los siguientes servicios, comuníquese con nosotros para mayor información</p>
             </div>
 
             <div class="row">
@@ -479,8 +479,8 @@
                                 <i class="fa fa-line-chart"></i>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">UX design</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                <h4 class="media-heading">PAGINAS WEB</h4>
+                                <p>Creación de páginas web empresariales especializadas para cada tipo de negocio</p>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
@@ -491,8 +491,8 @@
                                 <i class="fa fa-cubes"></i>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">UI design</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                <h4 class="media-heading">SISTEMAS INTEGRADOS</h4>
+                                <p>Creación de sistemas web para mejorar la gestión de las distintas áreas de su empresa</p>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
@@ -503,8 +503,8 @@
                                 <i class="fa fa-pie-chart"></i>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">SEO Services</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                <h4 class="media-heading">INFRAESTRUCTURA TI</h4>
+                                <p>Venta de equipos tecnológicos y de TI para que tengan una mejor infraestructura</p>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
@@ -515,8 +515,8 @@
                                 <i class="fa fa-bar-chart"></i>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">iOS App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                <h4 class="media-heading">ANDROID / iOS</h4>
+                                <p>Creación de aplicaciones Android y IOS para gestión de sus tareas</p>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
@@ -527,8 +527,8 @@
                                 <i class="fa fa-language"></i>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Android App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                <h4 class="media-heading">BASE DE DATOS</h4>
+                                <p>Creación y administración de bases de datos para su organización</p>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
@@ -539,8 +539,8 @@
                                 <i class="fa fa-bullseye"></i>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Win App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                <h4 class="media-heading">GESTIÓN </h4>
+                                <p>Asesoramiento en la actualización o creación de su área de TI </p>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
@@ -552,7 +552,7 @@
     <section id="portfolio">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Nuestros cursos</h2>
+                <h2 class="section-title text-center wow fadeInDown">Portafolio</h2>
                 <p class="text-center wow fadeInDown">    </p>
             </div>
 
