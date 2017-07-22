@@ -383,7 +383,9 @@
             <div class="row">
                 <div class="col-sm-9">
                     <h2>Empresa de desarollo de software, consultoría y especialización</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    <p>Somos una empresa dedicada a la creación de sistemas de información empresarial con amplia experiencia en el mercado local
+                        Creamos software empresarial para brindar soluciones integrales pensadas para cada tipo de negocio.
+                        Brindamos soluciones empresariales usando tecnologías de información creando software a medida y proporcionando asesorías.
                     </p>
                 </div>
                 <div class="col-sm-3 text-right">
@@ -397,7 +399,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">NOSOTROS</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p class="text-center wow fadeInDown">Somos una empresa dedicada a la creación de sistemas de información empresarial con amplia experiencia en el mercado local.</br> Brindamos soluciones empresariales usando tecnologia de informacion creando software a medida y proporcionando asesorias.</p>
             </div>
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
@@ -409,8 +411,8 @@
                             <i class="fa fa-line-chart"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Misión EDESCE DEVELOP</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <h4 class="media-heading">EDESCE - Learning</h4>
+                            <p>Comprometidos con tu futuro profesional EDESCE brinda cursos de capacitación en diversos temas profesionales. Contamos con ponentes calificados en las áreas correspondientes.</p>
                         </div>
                     </div>
 
@@ -419,8 +421,8 @@
                             <i class="fa fa-cubes"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Visión EDESCE DEVELOP</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <h4 class="media-heading">EDESCE - Development</h4>
+                            <p>Comprometidos con tu progreso empresarial EDESCE crea sistemas integrados para gestión logística, financiera, RRHH, comercial y entre otros</p>
                         </div>
                     </div>
 
@@ -429,8 +431,8 @@
                             <i class="fa fa-pie-chart"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Misión EDESCE DEVELOP</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <h4 class="media-heading">EDESCE - Solution</h4>
+                            <p>Te brindamos asesoría para que tomes las de decisiones en el rubro de la Tecnología de Información</p>
                         </div>
                     </div>
 
@@ -439,8 +441,8 @@
                             <i class="fa fa-pie-chart"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">SEO Services</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <h4 class="media-heading">EDESCE - Store</h4>
+                            <p>Brindamos el Hardware necesario y/o productos tecnológicos para que tu área de TI este abastecida con lo último en tecnología</p>
                         </div>
                     </div>
                 </div>
