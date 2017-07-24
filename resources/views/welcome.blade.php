@@ -662,7 +662,7 @@
 
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Conocenos un poco mejor</h2>
-                <br class="text-center wow fadeInDown">EDESCE Empresa de Desarrollo de Software Consultoria y Especializacion  <br> Nos dedicamos a que tu negocio se consolide en el mercado actual dandole posicionamiento, infraestructura para diferenciarlo de la competencia <br> En un mundo donde la tecnologia marca el ritmo del crecimeinto empresarial te brindamos asesoramiento en la  pre y post venta al adquirir tu sistema integrado
+                <p class="text-center wow fadeInDown">EDESCE Empresa de Desarrollo de Software Consultoria y Especializacion  <br> Nos dedicamos a que tu negocio se consolide en el mercado actual dandole posicionamiento, infraestructura para diferenciarlo de la competencia <br> En un mundo donde la tecnologia marca el ritmo del crecimeinto empresarial te brindamos asesoramiento en la  pre y post venta al adquirir tu sistema integrado</p>
             </div>
 
             <div class="row">
