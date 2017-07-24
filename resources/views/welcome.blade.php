@@ -662,7 +662,7 @@
 
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Conocenos un poco mejor</h2>
-                <p class="text-center wow fadeInDown">EDESCE Empresa de Desarrollo de Software Consultoria y Especializacion  <br> Nos dedicamos a que tu negocio se consolide en el mercado actual dandole posicionamiento, infraestructura para diferenciarlo de la competencia <br> En un mundo donde la tecnologia marca el ritmo del crecimeinto empresarial te brindamos asesoramiento en la  pre y post venta al adquirir tu sistema integrado</p>
+                <p class="text-center wow fadeInDown">En EDESCE EIRL - Empresa de Desarrollo de Software Consultoria y Especializacion  <br> Nos dedicamos a que tu negocio se consolide en el mercado actual dandole posicionamiento, infraestructura para diferenciarlo de la competencia <br> En un mundo donde la tecnologia marca el ritmo del crecimeinto empresarial te brindamos asesoramiento en la  pre y post venta al adquirir tu sistema integrado</p>
             </div>
 
             <div class="row">
@@ -676,22 +676,26 @@
 
                 <div class="col-sm-6 wow fadeInRight">
                     <h3 class="column-title">Multi Capability</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>¿Quiere que las distintas areas de su empresa esten unidas y trabajen a un ritmo mas productivo?
+                        ¿Necesita una interfaz para lelgar al cliente final?
+                        ¿Necesita una plataforma para mantener a su clientela siempre informada?
+                        ¿Necesita manejar ventas online?</p>
+                    <p>Nosotros somos su mejor opcion - Contactenos e informese de los distintos servicios que podemos ofrecerle</p>
 
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>EDESCE EIRL Comprometidos con tu crecimiento</p>
 
                     <div class="row">
                         <div class="col-sm-6">
                             <ul class="nostyle">
-                                <li><i class="fa fa-check-square"></i> Ipsum is simply dummy</li>
-                                <li><i class="fa fa-check-square"></i> When an unknown</li>
+                                <li><i class="fa fa-check-square"></i> Seguridad</li>
+                                <li><i class="fa fa-check-square"></i> Compromiso</li>
                             </ul>
                         </div>
 
                         <div class="col-sm-6">
                             <ul class="nostyle">
-                                <li><i class="fa fa-check-square"></i> The printing and typesetting</li>
-                                <li><i class="fa fa-check-square"></i> Lorem Ipsum has been</li>
+                                <li><i class="fa fa-check-square"></i> Confianza</li>
+                                <li><i class="fa fa-check-square"></i> Experiencia</li>
                             </ul>
                         </div>
                     </div>
