@@ -570,8 +570,8 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/01.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3 Item >Portfolio1</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3 Item >Android Studio</h3>
+                            Trabajamos con aplicaciones moviles
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -581,8 +581,8 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/02.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 2</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>ASP.NET</h3>
+                            Trabajamos con herramientas microsoft
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -592,8 +592,8 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/03.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 3</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>SQL Server</h3>
+                            Mantenga su data segura con nostros
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -603,8 +603,8 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/04.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 4</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>Laravel</h3>
+                            Usamos los framework mas seguros del mercado
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -614,8 +614,8 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/05.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 5</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>Progrmacion iOS</h3>
+                            Abarcamos todos los dispositivos
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -625,8 +625,8 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/06.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 5</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>PHP 7</h3>
+                            Ahora en costos de licenciamiento
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -636,8 +636,8 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/07.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 7</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>Java</h3>
+                            Programacion orientada a objetos en escritorio
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -647,8 +647,8 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/08.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 8</h3>
-                            Lorem Ipsum Dolor Sit
+                            <h3>Python</h3>
+                            Sintaxis limpia
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -661,8 +661,8 @@
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">About Us</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown">Conocenos un poco mejor</h2>
+                <br class="text-center wow fadeInDown">EDESCE Empresa de Desarrollo de Software Consultoria y Especializacion  <br> Nos dedicamos a que tu negocio se consolide en el mercado actual dandole posicionamiento, infraestructura para diferenciarlo de la competencia <br> En un mundo donde la tecnologia marca el ritmo del crecimeinto empresarial te brindamos asesoramiento en la  pre y post venta al adquirir tu sistema integrado  </p>
             </div>
 
             <div class="row">
