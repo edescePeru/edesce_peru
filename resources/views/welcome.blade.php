@@ -570,7 +570,7 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/01.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 1</h3>
+                            <h3>Portfolio1</h3>
                             Lorem Ipsum Dolor Sit
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
@@ -582,7 +582,7 @@
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/02.jpg') }}" alt="">
                         <div class="portfolio-info">
                             <h3>Portfolio Item 2</h3>
-                            Lorem Ipsum Dolor Sit
+                            Item              Lorem Ipsum Dolor Sit
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
