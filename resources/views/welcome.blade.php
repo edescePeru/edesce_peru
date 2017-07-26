@@ -879,38 +879,38 @@
                 </div>
 
                 <div class="col-sm-6">
-                    <h3 class="column-title">Nuestra historia</h3>
+                    <h3 class="column-title">Nuestros proyectos</h3>
                     <div role="tabpanel">
                         <ul class="nav main-tab nav-justified" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#tab1" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true">2010</a>
+                                <a href="#tab1" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true">WEB</a>
                             </li>
                             <li role="presentation">
-                                <a href="#tab2" role="tab" data-toggle="tab" aria-controls="tab2" aria-expanded="false">2011</a>
+                                <a href="#tab2" role="tab" data-toggle="tab" aria-controls="tab2" aria-expanded="false">MOVIL</a>
                             </li>
                             <li role="presentation">
-                                <a href="#tab3" role="tab" data-toggle="tab" aria-controls="tab3" aria-expanded="false">2013</a>
+                                <a href="#tab3" role="tab" data-toggle="tab" aria-controls="tab3" aria-expanded="false">ESCRITORIO</a>
                             </li>
                             <li role="presentation">
-                                <a href="#tab4" role="tab" data-toggle="tab" aria-controls="tab4" aria-expanded="false">2014</a>
+                                <a href="#tab4" role="tab" data-toggle="tab" aria-controls="tab4" aria-expanded="false">BASE DE DATOS</a>
                             </li>
                         </ul>
                         <div id="tab-content" class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="tab1" aria-labelledby="tab1">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters readable English.</p>
+                                <p>Desarrollamos aplicaicones web personales y empresariales. Muchas empresas </p>
+                                <p>confian en nostros para crearles plataformas que se adecuen con sus requerimientos</p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab2">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters readable English.</p>
+                                <p>Desarrollamos aplicacion moviles Android/iOS que se adecuen con sus requerimientos</p>
+                                <p>Tenemos 4 aplicaciones empresariales creadas y 6 aplicaciones personales que avalan nuestra efectividad</p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="tab3">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters readable English.</p>
+                                <p>Desarrollamos aplicaciones de escritorio para integrarse con multiples entornos de intranet manejados con gestores de </p>
+                                <p>Bases de datos licenciadas como no licenciadas. Otorgandole seguridad y confianza al usar.</p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab4" aria-labelledby="tab3">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters readable English.</p>
+                                <p>Trabajamos con distintas bases de datos licenciadas y no licenciadas. Logramos con estas optimizar sus procesos de guardado y gestion de informacion</p>
+                                <p>Tenemos a su dispocicion MySQL server , SQL server, Oracle , MongoDB, MariaDB, Casandra DB, Access</p>
                             </div>
                         </div>
                     </div>
