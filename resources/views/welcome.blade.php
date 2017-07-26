@@ -710,8 +710,8 @@
     <section id="work-process">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Nuestros valores</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown">Nuestros Procesos</h2>
+                <p class="text-center wow fadeInDown">En EDESCE EIRL estandarisamos nuestros procesos para que su producto final no presente ningun inconveniente</p>
             </div>
 
             <div class="row text-center">
@@ -721,7 +721,7 @@
                             <span>1</span>
                             <i class="fa fa-coffee fa-2x"></i>
                         </div>
-                        <h3>MEET</h3>
+                        <h3>RECONOCIMIENTO</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
@@ -730,7 +730,7 @@
                             <span>2</span>
                             <i class="fa fa-bullhorn fa-2x"></i>
                         </div>
-                        <h3>PLAN</h3>
+                        <h3>PLANEACION</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
@@ -739,7 +739,7 @@
                             <span>3</span>
                             <i class="fa fa-image fa-2x"></i>
                         </div>
-                        <h3>DESIGN</h3>
+                        <h3>DISEÑO</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
@@ -748,7 +748,7 @@
                             <span>4</span>
                             <i class="fa fa-heart fa-2x"></i>
                         </div>
-                        <h3>DEVELOP</h3>
+                        <h3>DESARROLLO</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
@@ -757,7 +757,7 @@
                             <span>5</span>
                             <i class="fa fa-shopping-cart fa-2x"></i>
                         </div>
-                        <h3>TESTING</h3>
+                        <h3>PRUEVAS</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
@@ -766,7 +766,7 @@
                             <span>6</span>
                             <i class="fa fa-space-shuttle fa-2x"></i>
                         </div>
-                        <h3>LAUNCH</h3>
+                        <h3>LANZAMIENTO</h3>
                     </div>
                 </div>
             </div>
@@ -860,21 +860,21 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h3 class="column-title">Nuestras habilidades</h3>
-                    <strong>GRAPHIC DESIGN</strong>
+                    <strong>APLICACIONES WEB</strong>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="85">85%</div>
+                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="95">95%</div>
                     </div>
-                    <strong>WEB DESIGN</strong>
+                    <strong>APLICACIONES MOVILES</strong>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="70">70%</div>
+                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="75">75%</div>
                     </div>
-                    <strong>WORDPRESS DEVELOPMENT</strong>
+                    <strong>APLICACIONES ESCRITORIO</strong>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="80">80%</div>
+                    </div>
+                    <strong>BASE DE DATOS</strong>
                     <div class="progress">
                         <div class="progress-bar progress-bar-primary" role="progressbar" data-width="90">90%</div>
-                    </div>
-                    <strong>JOOMLA DEVELOPMENT</strong>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="65">65%</div>
                     </div>
                 </div>
 
