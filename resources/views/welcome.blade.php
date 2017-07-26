@@ -923,33 +923,33 @@
     <section id="animated-number">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Fun Facts</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown">LOGROS CONSEGUIDOS</h2>
+                <p class="text-center wow fadeInDown">Nuestros logros se pueden medir con estos factores diferenciados <br> compruebelo usted mismo solicite una consulta online gratuita</p>
             </div>
 
             <div class="row text-center">
                 <div class="col-sm-3 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="animated-number" data-digit="2305" data-duration="1000"></div>
-                        <strong>CUPS OF COFFEE CONSUMED</strong>
+                        <div class="animated-number" data-digit="150" data-duration="1000"></div>
+                        <strong>PROYECTOS EN DESARROLLO</strong>
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="animated-number" data-digit="1231" data-duration="1000"></div>
-                        <strong>CLIENT WORKED WITH</strong>
+                        <div class="animated-number" data-digit="133" data-duration="1000"></div>
+                        <strong>CLIENTES SATISFECHOS</strong>
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="animated-number" data-digit="3025" data-duration="1000"></div>
-                        <strong>PROJECT COMPLETED</strong>
+                        <div class="animated-number" data-digit="1025" data-duration="1000"></div>
+                        <strong>PROYECTOS COMPLETADOS</strong>
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="animated-number" data-digit="1199" data-duration="1000"></div>
-                        <strong>QUESTIONS ANSWERED</strong>
+                        <div class="animated-number" data-digit="2199" data-duration="1000"></div>
+                        <strong>PREGUNTAS RESUELTAS</strong>
                     </div>
                 </div>
             </div>
@@ -966,14 +966,14 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/01.jpg') }}" alt=""></p>
-                                <h4>Louise S. Morgan</h4>
-                                <small>Treatment, storage, and disposal (TSD) worker</small>
+                                <h4>Antony Luis Gomez</h4>
+                                <small>Diseño grafico y FrontEnd worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                             <div class="item">
                                 <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/01.jpg') }}" alt=""></p>
-                                <h4>Louise S. Morgan</h4>
-                                <small>Treatment, storage, and disposal (TSD) worker</small>
+                                <h4>Xiomara Mendez Gutierrez</h4>
+                                <small>Administradora, Contadora worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                         </div>
