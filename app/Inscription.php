@@ -5,17 +5,21 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Subject extends Model
+class Inscription extends Model
 {
     protected $fillable = [
-        'name', 'description', 'level'
+        'modality', 'user_id'
     ];
 
-    public function inscription_details()
+    public function details()
     {
         return $this->hasMany('App\InscriptionDetail');
     }
 
-
+    public function users()
+    {
+        return $this->belongsTo('App\User', 'user_id');
+    }
+    
     use SoftDeletes;
 }

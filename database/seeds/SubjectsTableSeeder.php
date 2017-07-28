@@ -16,12 +16,14 @@ class SubjectsTableSeeder extends Seeder
     {
         // 1
         Subject::create([
-            'name' => 'PHP Basico',
+            'name' => 'PHP',
+            'level' => 'Básico',
             'description' => 'Curso de PHP desde cero'
         ]);
         // 2
         Subject::create([
-            'name' => 'Laravel Basico',
+            'name' => 'Laravel',
+            'level' => 'Básico',
             'description' => 'Curso de Laravel desde cero'
         ]);
 

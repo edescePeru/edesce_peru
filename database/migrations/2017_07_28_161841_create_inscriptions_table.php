@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSubjectsTable extends Migration
+class CreateInscriptionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,12 @@ class CreateSubjectsTable extends Migration
      */
     public function up()
     {
-        Schema::create('subjects', function (Blueprint $table) {
+        Schema::create('inscriptions', function (Blueprint $table) {
             $table->increments('id');
-
-            $table->string('name');
-            $table->enum('level', ['Básico', 'Intermedio', 'Avanzado']);
-            $table->string('description')->nullable();
-
+            $table->enum('modality', ['Presencial', 'Virtual', 'Semipresencial']);
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
-
             $table->softDeletes();
         });
     }
@@ -33,6 +30,6 @@ class CreateSubjectsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('subjects');
+        Schema::dropIfExists('inscriptions');
     }
 }
