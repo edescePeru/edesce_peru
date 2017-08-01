@@ -4,7 +4,7 @@
 
 @section('inscription','open')
 
-@section('inscriptions-create','active')
+@section('inscriptions','active')
 @section('menu-active')
     <li>
         <i class="ace-icon fa fa-home home-icon"></i>
@@ -14,16 +14,16 @@
         <i class="ace-icon fa fa-home home-icon"></i>
         <a href="#">Inscripciones</a>
     </li>
-    <li class="active">Nueva Inscripción</li>
+    <li class="active">Lista de Inscripciones</li>
 @endsection
 @section('content')
     <div id="path" data-path="{{ asset('/') }}"></div>
     <div class="page-header">
         <h1>
-            Historial de alumnos
+            Historial de Inscripciones
             <small>
                 <i class="ace-icon fa fa-angle-double-right"></i>
-                Visualizando los alumnos
+                Visualizando las inscripciones
             </small>
         </h1>
     </div>
@@ -43,21 +43,19 @@
                                 <span class="lbl"></span>
                             </label>
                         </th>
-                        <th>Nombre</th>
-                        <th>Apellidos</th>
-                        <th>
-                            Email
-                        </th>
-                        <th class="hidden-480">País</th>
-                        <th class="hidden-480">Ciudad</th>
-                        <th class="hidden-480">Codigo</th>
+                        <th>Código Inscripción</th>
+                        <th>Alumno</th>
+                        <th>Código Alumno</th>
+                        <th>Curso</th>
+                        <th>Modalidad</th>
+                        <th class="hidden-480">Fecha Inscrip.</th>
+                        <th class="hidden-480">Nota</th>
                         <th class="hidden-480">Accion</th>
                     </tr>
                     </thead>
 
                     <tbody>
-
-                    @foreach( $students as $student )
+                    @for ($i = 0; $i < sizeof($array); $i++)
                         <tr>
                             <td class="center">
                                 <label class="pos-rel">
@@ -65,32 +63,25 @@
                                     <span class="lbl"></span>
                                 </label>
                             </td>
-                            <td>
-
-                                <p>{{ $student->name }}</p></td>
-
-                            <td>{{ $student->surname }}</td>
-
-                            <td>{{  $student->email }}</td>
-
+                            <td>{{ $array[$i]['inscription_code'] }}</td>
+                            <td>{{ $array[$i]['student'] }}</td>
+                            <td>{{ $array[$i]['student_code'] }}</td>
+                            <td>{{ $array[$i]['subject'] }}</td>
                             <td class="center">
-                                {{  $student->country }}
+                                {{ $array[$i]['inscription_modality'] }}
                             </td>
                             <td class="center">
-                                {{  $student->city }}
+                                {{ $array[$i]['date'] }}
                             </td>
                             <td>
-                                {{  $student->code }}
-
+                                {{ $array[$i]['score'] }}
                             </td>
                             <td>
-                                <button class="btn btn-warning btn-sm" data-inscription="{{ $student->id }}" data-name="{{ $student->name }}" data-surname="{{ $student->surname }}">Inscribir
+                                <button class="btn btn-danger btn-sm" data-delete="{{ $array[$i]['inscription_id']  }}">Eliminar
                                 </button>
                             </td>
                         </tr>
-                    @endforeach
-
-
+                    @endfor
                     </tbody>
                 </table>
             </div>
@@ -99,200 +90,26 @@
 @endsection
 
 @section('modals')
-    <div  id="modalRegister" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-title">
-                        <h4>Nueva inscripción</h4>
-                    </div>
-                </div>
-                <div id="message">
-                </div>
-                <form id="formRegister" action="{{ url('inscription/registrar') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
-                    <div class="modal-body">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                        <input type="hidden" name="id">
-
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="code">Código de inscripción<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="code" id="code" class="form-control inside" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="name">Alumno<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="name" id="name" class="form-control inside" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="date">Fecha de inscripción<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input type="date" name="date" value="{{ date('Y-m-d') }}" id="date" class="form-control inside" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label" for="modality">Modalidad<span class="required">*</span></label>
-                            <div class="col-sm-8">
-                                <select class="form-control" name="modality" id="modality" required>
-                                    <option value="0">Seleccione modalidad</option>
-                                    <option value="Presencial">Presencial</option>
-                                    <option value="Semipresencial">Semi-presencial</option>
-                                    <option value="Virtual">Virtual</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label " for="subject">Curso<span class="required">*</span></label>
-                            <div class="col-sm-8">
-                                <select name="subject" id="subject" required class="form-control">
-                                    <option value="0">Seleccione curso</option>
-                                    @foreach( $subjects as $subject )
-                                        <option value="{{ $subject->id }}">{{ $subject->name }} {{ $subject->level }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="score">Nota<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="score" id="score" class="form-control inside" readonly>
-                            </div>
-                        </div>
-
-                        {{--<div class="form-group">
-                            <label class="control-label col-md-3" for="image">Fotografía<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input type="file" accept="image/*" id="payment_file" name="image" class="form-control inside" required>
-                            </div>
-                        </div>--}}
-                        <div class="modal-footer">
-                            <div class="text-center">
-                                <button class="btn btn-sm btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-                                <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Registrar inscripción</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div  id="modalShowImage" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-title">
-                        <h4>Fotografía</h4>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <label for="name">Ponente</label>
-                    <input type="text" name="name" class="form-control" readonly><br>
-                    <div class="text-center">
-                        <img src="" alt="" id="image" class="img">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="text-center">
-                        <button class="btn btn-sm btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div  id="modalEdit" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-title">
-                        <h4>Editar ponente</h4>
-                    </div>
-                </div>
-                <form id="formEdit" action="{{ url('admin/ponentes/editar') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
-                    <div class="modal-body">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                        <input type="hidden" name="id" />
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="name">Nombre<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="name" id="name" class="form-control inside">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="company">Email<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input type="text" name="email" id="email" class="form-control inside">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="company">Empresa<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="company" id="company" class="form-control inside">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="position">Más información<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="profile" id="profile" class="form-control inside">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="position">Cargo actual<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="position" id="position" class="form-control inside">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="image">Fotografía</label>
-                            <div class="col-md-8">
-                                <input type="file" accept="image/*" id="payment_file" name="image" class="form-control inside">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="name">Descripción<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <textarea name="description"  id=description" class="form-control inside no_resize" required></textarea>
-                            </div>
-                        </div>
-
-                        <div class="modal-footer">
-                            <div class="text-center">
-                                <button class="btn btn-sm btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-                                <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Guardar cambios</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
     <div  id="modalDelete" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title">
-                        <h4>Nuevo ponente</h4>
+                        <h4>Eliminar inscripción</h4>
                     </div>
                 </div>
 
-                <form id="formDelete" action="{{ url('admin/ponentes/eliminar') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
+                <form id="formDelete" action="{{ url('inscription/eliminar') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
                     <div class="modal-body">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                         <input type="hidden" name="id" id="id">
 
-                        <label>¿Desea eliminar el siguiente ponente?</label>
-                        <input name="name" id="name" class="form-control inside" readonly><br>
-
+                        <label>¿Desea eliminar la siguiente inscripción?</label>
+                        <p>Recuerde que debera ingresar de nuevo todos los datos.</p>
                         <div class="modal-footer">
                             <div class="text-center">
                                 <button class="btn btn-sm btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-                                <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Eliminar ponente</button>
+                                <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Eliminar Inscripción</button>
                             </div>
                         </div>
                     </div>
@@ -332,7 +149,7 @@
                                 bAutoWidth: false,
                                 "aoColumns": [
                                     { "bSortable": false },
-                                    null, null,null, null, null, null,null
+                                    null, null,null, null, null, null,null, null
                                 ],
                                 "aaSorting": [],
 

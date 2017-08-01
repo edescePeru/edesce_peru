@@ -39,6 +39,11 @@ class InscriptionController extends Controller
         $date    = $request->get('date');
         $modality = $request->get('modality');
         $subject  = $request->get('subject');
+        $code    = $request->get('code');
+
+        $code_unique = Inscription::where('code',$code)->first();
+        if( count($code_unique) != 0 )
+            return response()->json(['error'=>true,'message'=>'Ya existe una inscripción con este código.']);
 
         if( $modality == '0' )
             return response()->json(['error'=>true,'message'=>'Es necesario escoger una modalidad.']);
@@ -46,19 +51,25 @@ class InscriptionController extends Controller
         if( $subject == '0' )
             return response()->json(['error'=>true,'message'=>'Es necesario escoger un curso.']);
 
+        if( $code == "" )
+            return response()->json(['error'=>true,'message'=>'Es necesario ingresar el código de inscripción.']);
+
         DB::beginTransaction();
         try {
             $inscription = Inscription::create([
                 'user_id' => $id,
-                'modality' => $modality
+                'modality' => $modality,
+                'code' => $code
             ]);
 
             $inscriptions = Inscription::where('user_id', $id)->get();
             foreach ($inscriptions as $inscription){
                 $inscription_details = InscriptionDetail::where('inscription_id', $inscription->id)->get();
                 foreach ($inscription_details as $inscription_detail){
-                    if ($inscription_detail->subject_id == $subject)
+                    if ($inscription_detail->subject_id == $subject){
+                        DB::rollBack();
                         throw new \Exception('El alumno ya esta inscrito en dicho curso.');
+                    }
                 }
             }
 
@@ -94,7 +105,24 @@ class InscriptionController extends Controller
      */
     public function show(Inscription $inscription)
     {
-        //
+        $inscriptions = Inscription::with('users')->with('details')->get();
+        $array = [];
+        $k=0;
+        foreach ($inscriptions as $inscription) {
+            $array[$k]['inscription_id'] = $inscription->id;
+            $array[$k]['inscription_code'] = $inscription->code;
+            $array[$k]['student'] = $inscription->users->name . " " . $inscription->users->surname;
+            $array[$k]['student_code'] = $inscription->users->code;
+            $array[$k]['subject_id'] = $inscription->details[0]->subject_id;
+            $subject = Subject::find($inscription->details[0]->subject_id);
+            $array[$k]['subject'] = $subject->name . " " . $subject->level;
+            $array[$k]['date'] = $inscription->created_at;
+            $array[$k]['inscription_modality'] = $inscription->modality;
+            $array[$k]['score'] = $inscription->details[0]->score;
+            $k++;
+        }
+        //dd($array);
+        return view('inscription.show')->with(compact('array'));
     }
 
     /**

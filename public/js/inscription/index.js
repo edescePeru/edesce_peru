@@ -68,11 +68,8 @@ function showModalEdit()
 function showModalDelete()
 {
     var id = $(this).data('delete');
-    var name = $(this).data('name');
 
     modalDelete.find('[name=id]').val(id);
-    modalDelete.find('[name=name]').val(name);
-
     modalDelete.modal('show');
 }
 

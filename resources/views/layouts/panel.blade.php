@@ -281,7 +281,7 @@
 
                     <ul class="submenu">
                         <li class="@yield('inscriptions')">
-                            <a href="{{ url('/inscriptions') }}">
+                            <a href="{{ url('/inscriptions/show') }}">
                                 <i class="menu-icon fa fa-caret-right"></i>
                                 Lista Inscripciones
                             </a>

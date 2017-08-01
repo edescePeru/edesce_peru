@@ -31,4 +31,6 @@ Route::post('/subject/registrar', 'SubjectController@create');
 Route::get('/inscriptions/create', 'InscriptionController@index');
 Route::post('/inscription/registrar', 'InscriptionController@create');
 
+Route::get('/inscriptions/show', 'InscriptionController@show');
+
 Route::get('/home', 'HomeController@index')->name('home');

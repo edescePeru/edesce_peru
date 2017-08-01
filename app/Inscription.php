@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Inscription extends Model
 {
     protected $fillable = [
-        'modality', 'user_id'
+        'modality', 'user_id', 'code'
     ];
 
     public function details()
