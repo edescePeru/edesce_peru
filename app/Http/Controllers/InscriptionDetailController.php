@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\OutputDetail;
 use Illuminate\Http\Request;
 
-class OutputDetailController extends Controller
+class InscriptionDetailController extends Controller
 {
     /**
      * Display a listing of the resource.

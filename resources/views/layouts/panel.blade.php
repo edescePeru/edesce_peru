@@ -110,6 +110,12 @@
                             <!-- /section:basics/navbar.user_menu -->
             </ul>
         </div>
+        <div class="container"><div style="width:10px" id="google_translate_element"></div><script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
 
         <!-- /section:basics/navbar.dropdown -->
     </div><!-- /.navbar-container -->
@@ -262,6 +268,32 @@
                     </a>
 
                     <b class="arrow"></b>
+                </li>
+                <li class="@yield('inscription')">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-book"></i>
+                        <span class="menu-text">Inscripciones</span>
+
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+
+                    <b class="arrow"></b>
+
+                    <ul class="submenu">
+                        <li class="@yield('inscriptions')">
+                            <a href="{{ url('/inscriptions') }}">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Lista Inscripciones
+                            </a>
+                        </li>
+                        <li class="@yield('inscriptions-create')">
+                            <a href="{{ url('/inscriptions/create') }}">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Inscribir
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                    </ul>
                 </li>
 
             @endif

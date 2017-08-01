@@ -28,4 +28,7 @@ Route::post('/student/registrar', 'StudentController@create');
 Route::get('/subjects', 'SubjectController@index');
 Route::post('/subject/registrar', 'SubjectController@create');
 
+Route::get('/inscriptions/create', 'InscriptionController@index');
+Route::post('/inscription/registrar', 'InscriptionController@create');
+
 Route::get('/home', 'HomeController@index')->name('home');

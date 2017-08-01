@@ -1,16 +1,20 @@
 @extends('layouts.panel')
 
-@section('title','Alumnos')
+@section('title','Inscripciones')
 
-{{--@section('student','open')--}}
+@section('inscription','open')
 
-@section('student','active')
+@section('inscriptions-create','active')
 @section('menu-active')
     <li>
         <i class="ace-icon fa fa-home home-icon"></i>
-        <a href="#">Mantenedores</a>
+        <a href="#">Procesos</a>
     </li>
-    <li class="active">Alumnos</li>
+    <li>
+        <i class="ace-icon fa fa-home home-icon"></i>
+        <a href="#">Inscripciones</a>
+    </li>
+    <li class="active">Nueva Inscripción</li>
 @endsection
 @section('content')
     <div id="path" data-path="{{ asset('/') }}"></div>
@@ -27,7 +31,7 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <button class="btn btn-success btn-sm" data-register >Nuevo alumno</button>
+
             <div class="space-6"></div>
             <div class=''>
                 <table id="dynamic-table" class="table table-striped table-bordered table-hover">
@@ -80,12 +84,9 @@
 
                             </td>
                             <td>
-                                <button class="btn btn-warning btn-sm" data-edit="{{ $student->id }}" data-name="{{ $student->name }}" data-email="{{ $student->email }}">Editar
+                                <button class="btn btn-warning btn-sm" data-inscription="{{ $student->id }}" data-name="{{ $student->name }}" data-surname="{{ $student->surname }}">Inscribir
                                 </button>
-                                <button class="btn btn-danger btn-sm" data-delete="{{ $student->id }}" data-name="{{ $student->name }}">Eliminar</button>
                             </td>
-
-
                         </tr>
                     @endforeach
 
@@ -103,69 +104,58 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title">
-                        <h4>Nuevo alumno</h4>
+                        <h4>Nueva inscripción</h4>
                     </div>
                 </div>
                 <div id="message">
                 </div>
-                <form id="formRegister" action="{{ url('student/registrar') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
+                <form id="formRegister" action="{{ url('inscription/registrar') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
                     <div class="modal-body">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                        <input type="hidden" name="id">
 
                         <div class="form-group">
-                            <label class="control-label col-md-3" for="name">Nombre<span class="required">*</span></label>
+                            <label class="control-label col-md-3" for="name">Alumno<span class="required">*</span></label>
                             <div class="col-md-8">
                                 <input name="name" id="name" class="form-control inside" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3" for="surname">Apellidos<span class="required">*</span></label>
+                            <label class="control-label col-md-3" for="date">Fecha de inscripción<span class="required">*</span></label>
                             <div class="col-md-8">
-                                <input name="surname" id="surname" class="form-control inside" required>
+                                <input type="date" name="date" value="{{ date('Y-m-d') }}" id="date" class="form-control inside" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3" for="email">Email<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="email" id="email" class="form-control inside" required>
+                            <label class="col-sm-3 control-label" for="modality">Modalidad<span class="required">*</span></label>
+                            <div class="col-sm-8">
+                                <select class="form-control" name="modality" id="modality" required>
+                                    <option value="0">Seleccione modalidad</option>
+                                    <option value="Presencial">Presencial</option>
+                                    <option value="Semipresencial">Semi-presencial</option>
+                                    <option value="Virtual">Virtual</option>
+                                </select>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="password">Password<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="password" id="password" class="form-control inside" required>
-                            </div>
+
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-md-3" for="code">Código único<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="code" id="code" class="form-control inside" required>
+                            <label class="col-sm-3 control-label " for="subject">Curso<span class="required">*</span></label>
+                            <div class="col-sm-8">
+                                <select name="subject" id="subject" required class="form-control">
+                                    <option value="0">Seleccione curso</option>
+                                    @foreach( $subjects as $subject )
+                                        <option value="{{ $subject->id }}">{{ $subject->name }} {{ $subject->level }}</option>
+                                    @endforeach
+                                </select>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="country">País<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="country" id="country" class="form-control inside" required>
-                            </div>
+
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-md-3" for="city">Ciudad<span class="required">*</span></label>
+                            <label class="control-label col-md-3" for="score">Nota<span class="required">*</span></label>
                             <div class="col-md-8">
-                                <input name="city" id="city" class="form-control inside" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="mobile">Celular<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="mobile" id="mobile" class="form-control inside" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3" for="dni">Doc. Identidad<span class="required">*</span></label>
-                            <div class="col-md-8">
-                                <input name="dni" id="dni" class="form-control inside" required>
+                                <input name="score" id="score" class="form-control inside" readonly>
                             </div>
                         </div>
 
@@ -178,7 +168,7 @@
                         <div class="modal-footer">
                             <div class="text-center">
                                 <button class="btn btn-sm btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-                                <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Registrar alumno</button>
+                                <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Registrar inscripción</button>
                             </div>
                         </div>
                     </div>
@@ -559,6 +549,6 @@
 
         })
     </script>
-    <script src="{{ asset('js/student/index.js') }}"></script>
+    <script src="{{ asset('js/inscription/index.js') }}"></script>
 @endsection
 

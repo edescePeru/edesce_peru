@@ -711,7 +711,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Nuestros Procesos</h2>
-                <p class="text-center wow fadeInDown">En EDESCE EIRL estandarisamos nuestros procesos para que su producto final no presente ningun inconveniente</p>
+                <p class="text-center wow fadeInDown">En EDESCE EIRL estandarizamos nuestros procesos para que su producto final no presente ningun inconveniente</p>
             </div>
 
             <div class="row text-center">
@@ -721,7 +721,7 @@
                             <span>1</span>
                             <i class="fa fa-coffee fa-2x"></i>
                         </div>
-                        <h3>RECONOCIMIENTO</h3>
+                        <h3>INSPECCION</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
@@ -757,7 +757,7 @@
                             <span>5</span>
                             <i class="fa fa-shopping-cart fa-2x"></i>
                         </div>
-                        <h3>PRUEVAS</h3>
+                        <h3>PRUEBAS</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
