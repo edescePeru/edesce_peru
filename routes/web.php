@@ -34,3 +34,5 @@ Route::post('/inscription/registrar', 'InscriptionController@create');
 Route::get('/inscriptions/show', 'InscriptionController@show');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('profile/data/{code}', 'InscriptionController@showProfile');

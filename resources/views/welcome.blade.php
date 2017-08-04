@@ -1,90 +1,3 @@
-<!doctype html>
-<html lang="{{ config('app.locale') }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>{{ config('app.name') }}</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-        .custom-search input {
-            padding-right: 20px;
-            transition: all 0.5s ease 0s;
-            width: 30px;
-            float:right;
-        }
-
-            .custom-search input {
-                width: 100%;
-            }
-
-            .bg-black {
-                background: #999 none repeat scroll 0 0;
-                display: inline-block;
-                padding: 3% 2%;
-                width: 100%;
-            }
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-
-        </style>
-    </head>
-    <body>
-
-
 <!-- ESTO ES NUEVO COPIANDO Y PEGANDO -->
 <!DOCTYPE html>
 <html lang="en">
@@ -283,18 +196,19 @@
                                         <a href="{{ url('/home') }}">ACCEDER</a>
                                     </li> 
                                     @else
-                                         <li class="scroll"><a href="{{ url('/login') }}">LOGIN</a></li> 
-                                         <!-- <li class="scroll"><a href="{{ url('/register') }}">REGISTER</a></li> -->
+                                         <li class="scroll">
+                                             <a href="{{ url('/login') }}">LOGIN</a>
+                                         </li>
                                     @endif
                            @endif
                         </li>  
                                    
                     </ul>
-                    <form class="navbar-form navbar-left">
+                    <form class="navbar-form navbar-left" id="formProfile" >
                         <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Search">
+                          <input type="text" id="code" class="form-control" placeholder="Ingrese código">
                         </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="button" data-profile class="btn btn-default">Buscar</button>
                     </form>
                 </div>
 
@@ -308,6 +222,7 @@
         </nav><!--/nav-->
 
     </header><!--/header-->
+    <div id="error"></div>
     @if ( count( $errors ) > 0 )
         <div class="alert alert-danger">
             @foreach ($errors->all() as $error)
@@ -449,19 +364,6 @@
             </div>
         </div>
     </section>
-
-    <!--
-    <section id="cta2">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>MULTI</span> IS A CREATIVE HTML TEMPLATE</h2>
-                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Mauris pretium auctor quam. Vestibulum et nunc id nisi fringilla <br />iaculis. Mauris pretium auctor quam.</p>
-                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms"><a class="btn btn-primary btn-lg" href="#">Free Download</a></p>
-                <img class="img-responsive wow fadeIn" src="images/cta2/cta2-img.png" alt="" data-wow-duration="300ms" data-wow-delay="300ms">
-            </div>
-        </div>
-    </section>
-    -->
 
     <section id="services" >
         <div class="container">
@@ -1004,7 +906,6 @@
         </div>
     </section><!--/#get-in-touch-->
 
-
     <section id="contact">
         <div id="google-map" style="height:650px" data-latitude="52.365629" data-longitude="4.871331"></div>
         <div class="container-wrapper">
@@ -1067,13 +968,93 @@
         </div>
     </footer><!--/#footer-->
 
-<script
+    <div  id="modalProfile" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <h4>Información de la inscripción</h4>
+                    </div>
+                </div>
+
+                <form id="formProfile" class="form-horizontal form-label-left" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <fieldset>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="inscription_code">Código de Inscripción</label>
+                                <div class="col-sm-10">
+                                    <input type="text" id="inscription_code" class="form-control" readonly>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="student">Alumno</label>
+                                <div class="col-sm-10">
+                                    <input type="text" id="student" class="form-control" readonly>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="student_code">Código del alumno</label>
+                                <div class="col-sm-10">
+                                    <input type="text" id="student_code" class="form-control" readonly>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="subject">Curso</label>
+                                <div class="col-sm-10">
+                                    <input type="text" id="subject" class="form-control" readonly>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="date">Fecha</label>
+                                <div class="col-sm-10">
+                                    <input type="text" id="date" class="form-control" readonly>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="modality">Modalidad</label>
+                                <div class="col-sm-10">
+                                    <input type="text" id="modality" class="form-control" readonly>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="score">Nota</label>
+                                <div class="col-sm-10">
+                                    <input type="text" id="score" class="form-control" readonly>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                        <div class="modal-footer">
+                            <div class="text-center">
+                                <button class="btn btn-sm btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-  <script src="{{ asset('portada/js/jquery.js') }}"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="{{ asset('public/portada/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('portada/js/jquery.js') }}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="{{ asset('portada/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('portada/js/mousescroll.js') }}"></script>
@@ -1082,15 +1063,6 @@
     <script src="{{ asset('portada/js/jquery.isotope.min.js') }}"></script> <script src="{{ asset('portada/js/jquery.inview.min.js') }}"></script>
     <script src="{{ asset('portada/js/wow.min.js') }}"></script>
     <script src="{{ asset('portada/js/main.js') }}"></script>
+    <script src="{{ asset('js/inscription/profile.js') }}"></script>
 </body>
-</html>
-
-
-
-
-
-
-
-
-    </body>
 </html>

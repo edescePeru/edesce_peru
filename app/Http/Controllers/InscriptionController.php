@@ -158,4 +158,26 @@ class InscriptionController extends Controller
     {
         //
     }
+
+    public function showProfile($code)
+    {
+        $inscriptions = Inscription::where('code', $code)->with('users')->with('details')->get();
+        $array = [];
+        $k=0;
+        foreach ($inscriptions as $inscription) {
+            $array[$k]['inscription_id'] = $inscription->id;
+            $array[$k]['inscription_code'] = $inscription->code;
+            $array[$k]['student'] = $inscription->users->name . " " . $inscription->users->surname;
+            $array[$k]['student_code'] = $inscription->users->code;
+            $array[$k]['subject_id'] = $inscription->details[0]->subject_id;
+            $subject = Subject::find($inscription->details[0]->subject_id);
+            $array[$k]['subject'] = $subject->name . " " . $subject->level;
+            $array[$k]['date'] = $inscription->created_at->format('Y-m-d');
+            $array[$k]['inscription_modality'] = $inscription->modality;
+            $array[$k]['score'] = $inscription->details[0]->score;
+            $k++;
+        }
+        //dd($array);
+        return $array;
+    }
 }
