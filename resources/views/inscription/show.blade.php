@@ -77,7 +77,11 @@
                                 {{ $array[$i]['score'] }}
                             </td>
                             <td>
-                                <button class="btn btn-danger btn-sm" data-delete="{{ $array[$i]['inscription_id']  }}">Eliminar
+                                <button class="btn btn-success btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-score="{{ $array[$i]['inscription_id']  }}">Calificar
+                                </button>
+                                <button class="btn btn-primary btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-pdf="{{ $array[$i]['inscription_id']  }}">Subir pdf
+                                </button>
+                                <button class="btn btn-danger btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-delete="{{ $array[$i]['inscription_id']  }}">Eliminar
                                 </button>
                             </td>
                         </tr>
@@ -100,9 +104,11 @@
                 </div>
 
                 <form id="formDelete" action="{{ url('inscription/eliminar') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
+                    <div style="margin-bottom: 10px; margin-top: 10px;" class="col-md-10 col-md-offset-1" id="message_delete"></div>
                     <div class="modal-body">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                         <input type="hidden" name="id" id="id">
+                        <input type="hidden" name="id_subject" id="id_subject">
 
                         <label>¿Desea eliminar la siguiente inscripción?</label>
                         <p>Recuerde que debera ingresar de nuevo todos los datos.</p>
@@ -110,6 +116,76 @@
                             <div class="text-center">
                                 <button class="btn btn-sm btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
                                 <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Eliminar Inscripción</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div  id="modalScore" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <h4>Ingresar calificación</h4>
+                    </div>
+                </div>
+
+
+                <form id="formScore" action="{{ url('inscription/score') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
+
+                    <div style="margin-bottom: 10px; margin-top: 10px;" class="col-md-10 col-md-offset-1" id="message"></div>
+
+                    <div class="modal-body">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                        <input type="hidden" name="id" id="id">
+                        <input type="hidden" name="id_subject" id="id_subject">
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="score">Calificación<span class="required">*</span></label>
+                            <div class="col-md-8">
+                                <input name="score" id="score" class="form-control inside">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="text-center">
+                                <button class="btn btn-sm btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+                                <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Registrar calificación</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div  id="modalPdf" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <h4>Subir certificado</h4>
+                    </div>
+                </div>
+
+                <form id="formPdf" action="{{ url('inscription/pdf') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
+                    <div style="margin-bottom: 10px; margin-top: 10px;" class="col-md-10 col-md-offset-1" id="message_pdf"></div>
+
+                    <div class="modal-body">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                        <input type="hidden" name="id" id="id">
+                        <input type="hidden" name="id_subject" id="id_subject">
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Subir pdf</label>
+                            <div class="col-md-6">
+                                <input type="file" class="form-control" name="file_pdf" accept="application/pdf" >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
                             </div>
                         </div>
                     </div>

@@ -389,7 +389,7 @@
 <script type="text/javascript">
     if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.js'>"+"<"+"/script>");
 </script>
-<script src="{{asset('assets/js/bootstrap.js')}}"></script>
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 
 
 <!-- page specific plugin scripts -->

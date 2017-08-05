@@ -32,6 +32,9 @@ Route::get('/inscriptions/create', 'InscriptionController@index');
 Route::post('/inscription/registrar', 'InscriptionController@create');
 
 Route::get('/inscriptions/show', 'InscriptionController@show');
+Route::post('/inscription/score', 'InscriptionController@score');
+Route::post('/inscription/pdf', 'InscriptionController@pdf');
+Route::post('/inscription/eliminar', 'InscriptionController@delete');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

@@ -8,6 +8,7 @@ use App\Subject;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 
 class InscriptionController extends Controller
 {
@@ -154,9 +155,19 @@ class InscriptionController extends Controller
      * @param  \App\Inscription  $inscription
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Inscription $inscription)
+    public function delete(Request $request)
     {
-        //
+        if( Auth()->user()->role_id != 1 )
+            return redirect('/');
+
+        $id    = $request->get('id');
+        $subject  = $request->get('id_subject');
+
+        $inscription_detail = InscriptionDetail::where('inscription_id', $id)->where('subject_id', $subject)->first();
+        $inscription_detail->delete();
+        $inscription = Inscription::find($id);
+        $inscription->delete();
+        return response()->json(['error'=>false,'message'=>'Inscription eliminada correctamente']);
     }
 
     public function showProfile($code)
@@ -179,5 +190,53 @@ class InscriptionController extends Controller
         }
         //dd($array);
         return $array;
+    }
+
+    public function score(Request $request){
+        if( Auth()->user()->role_id != 1 )
+            return redirect('/');
+
+        $id    = $request->get('id');
+        $score  = $request->get('score');
+        $subject  = $request->get('id_subject');
+        //dd($request);
+
+        if( $score == "" || $score < 0 || $score > 20 )
+            return response()->json(['error'=>true,'message'=>'Ingrese un valor númerico entre 0 y 20.']);
+
+        $inscriptionDetail = InscriptionDetail::where('inscription_id', $id)->where('subject_id', $subject)->first();
+        /*$inscriptionDetail_id =  $inscriptionDetail->id;
+        $inscription = InscriptionDetail::find($inscriptionDetail_id);*/
+        $inscriptionDetail->score = $score;
+
+        $inscriptionDetail->save();
+        return response()->json(['error'=>false,'message'=>'Calificación modificada correctamente']);
+
+    }
+
+    public function pdf(Request $request){
+        if( Auth()->user()->role_id != 1 )
+            return redirect('/');
+
+        $id    = $request->get('id');
+        $file_pdf    = $request->file('file_pdf');
+        $subject  = $request->get('id_subject');
+
+        $inscriptionDetail = InscriptionDetail::where('inscription_id', $id)->where('subject_id', $subject)->first();
+
+        // Si el detalle ya tiene un pdf asociado se debe eliminar y reemplazar por el que viene
+        
+        if (!$request->hasFile('file_pdf'))
+            return response()->json(['error'=>true,'message'=>'Ocurrió un error al subir la imagen.']);
+
+        $path = public_path().'/assets/storage';
+        $extension = $file_pdf->getClientOriginalExtension();
+        $fileName = $file_pdf->getClientOriginalName();
+        $file_pdf->move($path, $fileName);
+        $inscriptionDetail->file_pdf = $fileName;
+        $inscriptionDetail->save();
+
+        return response()->json(['error'=>false,'message'=>'Pdf subido correctamente']);
+
     }
 }

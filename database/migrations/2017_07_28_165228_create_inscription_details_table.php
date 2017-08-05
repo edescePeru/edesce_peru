@@ -21,6 +21,7 @@ class CreateInscriptionDetailsTable extends Migration
             $table->integer('subject_id')->unsigned();
             $table->foreign('subject_id')->references('id')->on('subjects');
             $table->integer('score')->nullable();
+            $table->string('file_pdf')->nullable();
 
             $table->timestamps();
 

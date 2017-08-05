@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class InscriptionDetail extends Model
 {
     protected $fillable = [
-        'inscription_id', 'subject_id'
+        'inscription_id', 'subject_id', 'score', 'file_pdf'
     ];
 
     public function inscription()
