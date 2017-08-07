@@ -138,7 +138,7 @@ class InscriptionController extends Controller
         //
     }
 
-    
+
     /**
      * Update the specified resource in storage.
      *
@@ -231,7 +231,7 @@ class InscriptionController extends Controller
         if (!$request->hasFile('file_pdf'))
             return response()->json(['error'=>true,'message'=>'Ocurrió un error al subir la imagen.']);
 
-        $path = public_path().'/assets/storage';
+        $path = public_path().'/assets/certificados';
         $extension = $file_pdf->getClientOriginalExtension();
         $fileName = $file_pdf->getClientOriginalName();
         $file_pdf->move($path, $fileName);
