@@ -126,6 +126,7 @@ class InscriptionController extends Controller
         return view('inscription.show')->with(compact('array'));
     }
 
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -137,6 +138,7 @@ class InscriptionController extends Controller
         //
     }
 
+    
     /**
      * Update the specified resource in storage.
      *
