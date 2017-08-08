@@ -81,6 +81,10 @@
                                 </button>
                                 <button class="btn btn-primary btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-pdf="{{ $array[$i]['inscription_id']  }}">Subir pdf
                                 </button>
+                                @if ($array[$i]['file_pdf']!=null)
+                                <a class="btn btn-danger btn-sm" href="{{ asset('assets/certificados/'.$array[$i]['file_pdf']) }}" target="_blank">Descargar PDF
+                                </a>
+                                @endif
                                 <button class="btn btn-danger btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-delete="{{ $array[$i]['inscription_id']  }}">Eliminar
                                 </button>
                             </td>

@@ -120,6 +120,7 @@ class InscriptionController extends Controller
             $array[$k]['date'] = $inscription->created_at;
             $array[$k]['inscription_modality'] = $inscription->modality;
             $array[$k]['score'] = $inscription->details[0]->score;
+            $array[$k]['file_pdf'] = $inscription->details[0]->file_pdf;
             $k++;
         }
         //dd($array);
