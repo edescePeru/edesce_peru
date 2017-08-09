@@ -9,7 +9,7 @@
     <title>EDESCE</title>
     
     <!-- CSS -->
-    <link href="{{asset('portada/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{asset('//portada/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ asset('portada/css/animate.min.css') }}" rel="stylesheet">
     <link href="{{ asset('portada/css/owl.carousel.css') }}" rel="stylesheet">
