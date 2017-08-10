@@ -9,14 +9,14 @@
     <title>EDESCE</title>
     
     <!-- CSS -->
-    <link href="{{asset('//portada/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{asset('./portada/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="{{ asset('//portada/css/animate.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('//portada/css/owl.carousel.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('//portada/css/owl.transitions.css') }}" rel="stylesheet" type="text/css" >
-    <link href="{{ asset('//portada/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('//portada/css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('//portada/css/responsive.css') }}" rel="stylesheet">
+    <link href="{{ asset('./portada/css/animate.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('./portada/css/owl.carousel.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('./portada/css/owl.transitions.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('./portada/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('./portada/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('./portada/css/responsive.css') }}" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
