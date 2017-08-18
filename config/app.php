@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://www.edesce.com'),
+    'url' => env('APP_URL', 'localhost'),
 
     /*
     |--------------------------------------------------------------------------
