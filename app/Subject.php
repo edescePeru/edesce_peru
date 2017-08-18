@@ -16,6 +16,5 @@ class Subject extends Model
         return $this->hasMany('App\InscriptionDetail');
     }
 
-
     use SoftDeletes;
 }

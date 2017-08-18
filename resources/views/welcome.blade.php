@@ -1065,4 +1065,5 @@
     <script src="{{ asset('/portada/js/main.js') }}"></script>
     <script src="{{ asset('/js/inscription/profile.js') }}"></script>
 </body>
+
 </html>
