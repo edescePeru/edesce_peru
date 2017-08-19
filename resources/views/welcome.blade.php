@@ -17,10 +17,7 @@
     <link href="{{ asset('/portada/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('/portada/css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('/portada/css/responsive.css') }}" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->       
+
 
     <link rel="icon" href="{{ asset('/portada/images/ico/edesce.png') }}" type="image">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('/portada/images/ico/apple-touch-icon-144-precomposed.png') }}">
@@ -187,21 +184,17 @@
                         <li class="scroll"><a href="#about"> SOLUTIONS</a></li>
                         
                         <li class="scroll"><a href="#get-in-touch">CONTACTO</a></li>
-
-
-                        <li class="scroll">
                             @if (Route::has('login'))
                                     @if (Auth::check())
                                      <li class="scroll">
                                         <a href="{{ url('/home') }}">ACCEDER</a>
-                                    </li> 
+                                    </li>
                                     @else
                                          <li class="scroll">
                                              <a href="{{ url('/login') }}">LOGIN</a>
                                          </li>
                                     @endif
                            @endif
-                        </li>  
                                    
                     </ul>
                     <form class="navbar-form navbar-left" id="formProfile" >
@@ -477,7 +470,7 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/01.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3 Item >Android Studio</h3>
+                            <h3>Android Studio</h3>
                             Trabajamos con aplicaciones moviles
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
@@ -1054,12 +1047,8 @@
         </div>
     </div>
 
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
     <script src="{{ asset('/portada/js/jquery.js') }}"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="{{ asset('/portada/js/bootstrap.min.js') }}"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="{{ asset('/portada/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('/portada/js/mousescroll.js') }}"></script>
