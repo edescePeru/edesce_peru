@@ -3,7 +3,7 @@
  */
 jQuery(function (){
 
-    $('#contact-form').on('submit', sendEmail);
+    $('#send').on('click', sendEmail);
 
     modalProfile  = $('#modalProfile');
 
