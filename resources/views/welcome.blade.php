@@ -920,7 +920,7 @@
                               <abbr title="Phone">P:</abbr> (123) 456-7890
                             </address>
 
-                            <form id="contact-form" name="contact-form" method="post">
+                            <form id="contact-form" name="contact-form" method="post" action="{{ url('/contact') }}">
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" placeholder="Nombre" required>
