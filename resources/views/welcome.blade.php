@@ -9,21 +9,21 @@
     <title>EDESCE</title>
     
     <!-- CSS -->
-    <link href="{{asset('/portada/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{asset('portada/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="{{ asset('/portada/css/animate.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/portada/css/owl.carousel.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/portada/css/owl.transitions.css') }}" rel="stylesheet" type="text/css" >
-    <link href="{{ asset('/portada/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/portada/css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('/portada/css/responsive.css') }}" rel="stylesheet">
+    <link href="{{ asset('portada/css/animate.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('portada/css/owl.carousel.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('portada/css/owl.transitions.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('portada/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('portada/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('portada/css/responsive.css') }}" rel="stylesheet">
 
 
-    <link rel="icon" href="{{ asset('/portada/images/ico/edesce.png') }}" type="image">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('/portada/images/ico/apple-touch-icon-144-precomposed.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('/portada/images/ico/apple-touch-icon-114-precomposed.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('/portada/images/ico/apple-touch-icon-72-precomposed.png') }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ asset('/portada/images/ico/apple-touch-icon-57-precomposed.png') }}">
+    <link rel="icon" href="{{ asset('portada/images/ico/edesce.png') }}" type="image">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('portada/images/ico/apple-touch-icon-144-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('portada/images/ico/apple-touch-icon-114-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('portada/images/ico/apple-touch-icon-72-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('portada/images/ico/apple-touch-icon-57-precomposed.png') }}">
 
     <style>
         .mysolution{
@@ -130,7 +130,7 @@
                                     <ul class="clearfix">
                                         <li>
                                             <a target="_blank" href='https://www.facebook.com/EDESCE'>
-                                                <img src="{{ asset('/portada/images/facebook.png') }}" alt="" style="width: 18px; ">
+                                                <img src="{{ asset('portada/images/facebook.png') }}" alt="" style="width: 18px; ">
                                             </a>
                                         </li>
 
@@ -172,7 +172,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" style="padding: 2px;"><img src="{{ asset('/portada/images/logo4.png') }}" alt="logo" ></a>
+                    <a class="navbar-brand" href="#" style="padding: 2px;"><img src="{{ asset('portada/images/logo4.png') }}" alt="logo" ></a>
                 </div>
                 
                 <div class="collapse navbar-collapse navbar-right">
@@ -516,7 +516,7 @@
                         <div class="portfolio-info">
                             <h3>Progrmacion iOS</h3>
                             Abarcamos todos los dispositivos
-                            <a class="preview" href="{{ asset('/portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -527,29 +527,29 @@
                         <div class="portfolio-info">
                             <h3>PHP 7</h3>
                             Ahora en costos de licenciamiento
-                            <a class="preview" href="{{ asset('/portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item creative portfolio">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{ asset('/portada/images/portfolio/07.jpg') }}" alt="">
+                        <img class="img-responsive" src="{{ asset('portada/images/portfolio/07.jpg') }}" alt="">
                         <div class="portfolio-info">
                             <h3>Java</h3>
                             Programacion orientada a objetos en escritorio
-                            <a class="preview" href="{{ asset('/portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item corporate">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{ asset('/portada/images/portfolio/08.jpg') }}" alt="">
+                        <img class="img-responsive" src="{{ asset('portada/images/portfolio/08.jpg') }}" alt="">
                         <div class="portfolio-info">
                             <h3>Python</h3>
                             Sintaxis limpia
-                            <a class="preview" href="{{ asset('/portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -684,7 +684,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('/portada/images/team/01.jpg') }}" alt="">
+                            <img class="img-responsive" src="{{ asset('portada/images/team/01.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Bin Burhan</h3>
@@ -702,7 +702,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('/portada/images/team/02.jpg') }}" alt="">
+                            <img class="img-responsive" src="{{ asset('portada/images/team/02.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Jane Man</h3>
@@ -720,7 +720,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('/portada/images/team/03.jpg') }}" alt="">
+                            <img class="img-responsive" src="{{ asset('portada/images/team/03.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Pahlwan</h3>
@@ -738,7 +738,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('/portada/images/team/04.jpg') }}" alt="">
+                            <img class="img-responsive" src="{{ asset('portada/images/team/04.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Nasir uddin</h3>
@@ -865,13 +865,13 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <p><img class="img-circle img-thumbnail" src="{{ asset('/portada/images/testimonial/01.jpg') }}" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/01.jpg') }}" alt=""></p>
                                 <h4>Antony Luis Gomez</h4>
                                 <small>Diseño grafico y FrontEnd worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                             <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="{{ asset('/portada/images/testimonial/01.jpg') }}" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/01.jpg') }}" alt=""></p>
                                 <h4>Xiomara Mendez Gutierrez</h4>
                                 <small>Administradora, Contadora worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -1048,17 +1048,17 @@
         </div>
     </div>
 
-    <script src="{{ asset('/portada/js/jquery.js') }}"></script>
-    <script src="{{ asset('/portada/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('portada/js/jquery.js') }}"></script>
+    <script src="{{ asset('portada/js/bootstrap.min.js') }}"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="{{ asset('/portada/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('/portada/js/mousescroll.js') }}"></script>
-    <script src="{{ asset('/portada/js/smoothscroll.js') }}"></script>
-    <script src="{{ asset('/portada/js/jquery.prettyPhoto.js') }}"></script>
-    <script src="{{ asset('/portada/js/jquery.isotope.min.js') }}"></script> <script src="{{ asset('portada/js/jquery.inview.min.js') }}"></script>
-    <script src="{{ asset('/portada/js/wow.min.js') }}"></script>
-    <script src="{{ asset('/portada/js/main.js') }}"></script>
-    <script src="{{ asset('/js/inscription/profile.js') }}"></script>
+    <script src="{{ asset('portada/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('portada/js/mousescroll.js') }}"></script>
+    <script src="{{ asset('portada/js/smoothscroll.js') }}"></script>
+    <script src="{{ asset('portada/js/jquery.prettyPhoto.js') }}"></script>
+    <script src="{{ asset('portada/js/jquery.isotope.min.js') }}"></script> <script src="{{ asset('portada/js/jquery.inview.min.js') }}"></script>
+    <script src="{{ asset('portada/js/wow.min.js') }}"></script>
+    <script src="{{ asset('portada/js/main.js') }}"></script>
+    <script src="{{ asset('js/inscription/profile.js') }}"></script>
 </body>
 
 </html>

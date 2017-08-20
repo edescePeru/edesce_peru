@@ -9,7 +9,7 @@ class MailController extends Controller
 {
     public function send( Request $request )
      {
-         //dd($request->name);
+         /*//dd($request->name);
          if( $request->get('name') == "" )
              return response()->json(['error'=>true,'message'=>'Ingrese el nombre del remitente.']);
          if( $request->get('email') == "" )
@@ -21,10 +21,17 @@ class MailController extends Controller
 
          Mail::send('emails.contact', $request->all(), function ($msj) use ($request){
             $msj->subject('Correo de contacto');
-             $msj->to('edesceperu@gmail.com');
+             $msj->to('joryes1894@gmail.com');
+         });
+
+         return response()->json(['error'=>false,'message'=>'Correo enviado correctamente']);*/
+
+         Mail::send('emails.contact', $request->all(), function ($msj){
+             $msj->subject('Correo de contacto');
+             $msj->to('joryes1894@gmail.com');
          });
 
          return response()->json(['error'=>false,'message'=>'Correo enviado correctamente']);
 
-    }
+     }
 }
