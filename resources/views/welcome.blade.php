@@ -179,8 +179,8 @@
                     <ul class="nav navbar-nav">
                         <li class="scroll active"><a href="#home">INICIO</a></li>
                         
-                        <li class="scroll"><a href="#services"> DEVELOPMENT</a></li>
-                        <li class="scroll"><a href="#portfolio"> LEARNING</a></li>
+                        <li class=""><a href="#services"> DEVELOPMENT</a></li>
+                        <li class=""><a href="#portfolio"> LEARNING</a></li>
                         <li class="scroll"><a href="#about"> SOLUTIONS</a></li>
                         
                         <li class="scroll"><a href="#get-in-touch">CONTACTO</a></li>
