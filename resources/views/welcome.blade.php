@@ -206,7 +206,7 @@
                 </div>
 
             </div><!--/.container-->
-            <div class="container"><div style="width:10px" id="google_translate_element"></div><script type="text/javascript">
+            <div class="container"><div style="display: none; width:10px" id="google_translate_element"></div><script type="text/javascript">
                     function googleTranslateElementInit() {
                         new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
                     }
