@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'joryes1894@gmail.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'edesceperu@gmail.com'),
         'name' => env('MAIL_FROM_NAME', 'Edesce Peru'),
     ],
 
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
 
     /*
     |--------------------------------------------------------------------------
@@ -112,12 +112,12 @@ return [
     |
     */
 
-   /* 'markdown' => [
+    'markdown' => [
         'theme' => 'default',
 
         'paths' => [
             resource_path('views/vendor/mail'),
         ],
-    ],*/
+    ],
 
 ];
