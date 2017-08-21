@@ -94,7 +94,7 @@
         }
 
 
-        @media only screen and (min-width: 768px){
+       /* @media only screen and (min-width: 768px){
             #main-menu.navbar-default .navbar-nav > li > a {
                 padding-bottom: 0px;
             }
@@ -107,7 +107,7 @@
             #main-menu.navbar-default .navbar-nav > li.active > a{
                 padding-top: 18px;
             }
-        }
+        }*/
 
 
 
