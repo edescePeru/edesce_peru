@@ -175,9 +175,9 @@
                     <a class="navbar-brand" href="#" style="padding: 2px;"><img src="{{ asset('portada/images/logo4.png') }}" alt="logo" ></a>
                 </div>
                 
-                <div class=" navbar-collapse navbar-right">
+                <div class="navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class=" active"><a href="#home">INICIO</a></li>
+                        <li class="active"><a href="#home">INICIO</a></li>
                         
                         <li class=""><a href="#services"> DEVELOPMENT</a></li>
                         <li class=""><a href="#portfolio"> LEARNING</a></li>
