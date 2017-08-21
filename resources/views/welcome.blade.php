@@ -78,7 +78,7 @@
 
         i.fa{
             color: #ffffff;
-            transition: all 0.4s ease-out;
+            'transition: all 0.4s ease-out;
         }
 
         i.fa:hover {
@@ -94,20 +94,19 @@
         }
 
 
-       /* @media only screen and (min-width: 768px){
+        @media only screen and (min-width: 768px){
             #main-menu.navbar-default .navbar-nav > li > a {
-                padding-bottom: 0px;
+                padding-top: 18px;
             }
 
             #main-menu.navbar-default .navbar-nav > li:hover > a {
-                padding-top: 18px;
-                transition: all 0.4s ease-out;
+                padding-top: 18px !important;
             }
 
             #main-menu.navbar-default .navbar-nav > li.active > a{
                 padding-top: 18px;
             }
-        }*/
+        }
 
 
 
@@ -186,11 +185,11 @@
                         <li class=""><a href="#get-in-touch">CONTACTO</a></li>
                             @if (Route::has('login'))
                                     @if (Auth::check())
-                                     <li class="scroll">
+                                     <li class="">
                                         <a href="{{ url('/home') }}">ACCEDER</a>
                                     </li>
                                     @else
-                                         <li class="scroll">
+                                         <li class="">
                                              <a href="{{ url('/login') }}">LOGIN</a>
                                          </li>
                                     @endif
