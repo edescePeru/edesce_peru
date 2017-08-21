@@ -19,8 +19,8 @@ class MailController extends Controller
          if( $request->get('mensaje') == "")
              return response()->json(['error'=>true,'message'=>'Ingrese el mensaje de contacto.']);
 
-         Mail::send('emails.contact', $request->all(), function ($msj){
-             $msj->subject('Correo de contacto');
+         Mail::send('emails.contact', $request->all(), function ($msj) use ($request){
+             $msj->subject($request->get('subject'));
              $msj->to('edesceperu@gmail.com');
          });
 
