@@ -175,15 +175,15 @@
                     <a class="navbar-brand" href="#" style="padding: 2px;"><img src="{{ asset('portada/images/logo4.png') }}" alt="logo" ></a>
                 </div>
                 
-                <div class="collapse navbar-collapse navbar-right">
+                <div class=" navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="#home">INICIO</a></li>
+                        <li class=" active"><a href="#home">INICIO</a></li>
                         
                         <li class=""><a href="#services"> DEVELOPMENT</a></li>
                         <li class=""><a href="#portfolio"> LEARNING</a></li>
-                        <li class="scroll"><a href="#about"> SOLUTIONS</a></li>
+                        <li class=""><a href="#about"> SOLUTIONS</a></li>
                         
-                        <li class="scroll"><a href="#get-in-touch">CONTACTO</a></li>
+                        <li class=""><a href="#get-in-touch">CONTACTO</a></li>
                             @if (Route::has('login'))
                                     @if (Auth::check())
                                      <li class="scroll">
