@@ -12,9 +12,9 @@
 </head>
 <body>
 <img src="http://www.redgesam.cl/wp2/wp-content/uploads/2013/06/email-sticker.jpg" class="logo">
-<p><strong>Nombre: </strong>{{ $data[0] }}</p>
+<p><strong>Nombre: </strong>{{ $name }}</p>
 <p><strong>Correo: </strong>{{ $email }}</p>
-<p><strong>Mensaje: </strong>{{ $message }}</p>
+<p><strong>Mensaje: </strong>{{ $mensaje }}</p>
 
 </body>
 </html>
