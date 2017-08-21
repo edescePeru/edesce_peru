@@ -921,7 +921,7 @@
                             </address>
 
                             <form id="contact-form" name="contact-form" method="post">
-                                {!! csrf_field() !!}
+                                {{ csrf_field() }}
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" placeholder="Nombre" required>
                                 </div>
@@ -934,7 +934,7 @@
                                 <div class="form-group">
                                     <textarea name="message" class="form-control" rows="8" placeholder="Mensaje" required></textarea>
                                 </div>
-                                <button type="button" id="send" data-url="{{ url('/contact') }}" class="btn btn-primary">Enviar mensaje</button>
+                                <button id="send" data-url="{{ url('/contact') }}" class="btn btn-primary">Enviar mensaje</button>
                             </form>
                         </div>
                     </div>
