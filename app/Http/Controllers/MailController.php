@@ -28,10 +28,10 @@ class MailController extends Controller
 
          $data = [];
          $data = $request->all();
-         var_dump($data);
-         dd("dfsdf");
+         //var_dump($data);
+         //dd("dfsdf");
 
-         Mail::send('emails.contact', $request->all(), function ($msj){
+         Mail::send('emails.contact', $data, function ($msj){
              $msj->subject('Correo de contacto');
              $msj->to('edesceperu@gmail.com');
          });
