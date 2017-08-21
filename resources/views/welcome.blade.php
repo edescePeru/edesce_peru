@@ -1049,7 +1049,7 @@
 
     <script src="{{ asset('portada/js/jquery.js') }}"></script>
     <script src="{{ asset('portada/js/bootstrap.min.js') }}"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2WcRbg2v5iuQsY-92sw7U2AttUefQ2PQ"></script>
     <script src="{{ asset('portada/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('portada/js/mousescroll.js') }}"></script>
     <script src="{{ asset('portada/js/smoothscroll.js') }}"></script>
