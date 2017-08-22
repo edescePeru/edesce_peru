@@ -904,7 +904,14 @@
     </section><!--/#get-in-touch-->
 
     <section id="contact">
-        <div id="google-map" style="height:650px" data-latitude="52.365629" data-longitude="4.871331"></div>
+        <iframe
+                width="600"
+                height="450"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA2WcRbg2v5iuQsY-92sw7U2AttUefQ2PQ
+    &q=edesce+trujillo+peru" allowfullscreen>
+        </iframe>
+        <div id="google-map" style="height:650px" data-latitude="-8.1110305" data-longitude="-79.0284436" data-zoom="100"></div>
         <div class="container-wrapper">
             <div class="container">
                 <div class="row">
