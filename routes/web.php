@@ -39,3 +39,5 @@ Route::post('/inscription/eliminar', 'InscriptionController@delete');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('profile/data/{code}', 'InscriptionController@showProfile');
+
+Route::post('/contact', 'MailController@send');

@@ -9,24 +9,21 @@
     <title>EDESCE</title>
     
     <!-- CSS -->
-    <link href="{{asset('/portada/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{asset('portada/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="{{ asset('/portada/css/animate.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/portada/css/owl.carousel.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/portada/css/owl.transitions.css') }}" rel="stylesheet" type="text/css" >
-    <link href="{{ asset('/portada/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/portada/css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('/portada/css/responsive.css') }}" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <link href="{{ asset('portada/css/animate.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('portada/css/owl.carousel.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('portada/css/owl.transitions.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('portada/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('portada/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('portada/css/responsive.css') }}" rel="stylesheet">
 
-    <link rel="icon" href="{{ asset('/portada/images/ico/edesce.png') }}" type="image">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('/portada/images/ico/apple-touch-icon-144-precomposed.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('/portada/images/ico/apple-touch-icon-114-precomposed.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('/portada/images/ico/apple-touch-icon-72-precomposed.png') }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ asset('/portada/images/ico/apple-touch-icon-57-precomposed.png') }}">
+
+    <link rel="icon" href="{{ asset('portada/images/ico/edesce.png') }}" type="image">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('portada/images/ico/apple-touch-icon-144-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('portada/images/ico/apple-touch-icon-114-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('portada/images/ico/apple-touch-icon-72-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('portada/images/ico/apple-touch-icon-57-precomposed.png') }}">
 
     <style>
         .mysolution{
@@ -81,7 +78,7 @@
 
         i.fa{
             color: #ffffff;
-            transition: all 0.4s ease-out;
+            'transition: all 0.4s ease-out;
         }
 
         i.fa:hover {
@@ -99,12 +96,11 @@
 
         @media only screen and (min-width: 768px){
             #main-menu.navbar-default .navbar-nav > li > a {
-                padding-bottom: 0px;
+                padding-top: 18px;
             }
 
             #main-menu.navbar-default .navbar-nav > li:hover > a {
-                padding-top: 18px;
-                transition: all 0.4s ease-out;
+                padding-top: 18px !important;
             }
 
             #main-menu.navbar-default .navbar-nav > li.active > a{
@@ -133,7 +129,7 @@
                                     <ul class="clearfix">
                                         <li>
                                             <a target="_blank" href='https://www.facebook.com/EDESCE'>
-                                                <img src="{{ asset('/portada/images/facebook.png') }}" alt="" style="width: 18px; ">
+                                                <img src="{{ asset('portada/images/facebook.png') }}" alt="" style="width: 18px; ">
                                             </a>
                                         </li>
 
@@ -175,33 +171,29 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" style="padding: 2px;"><img src="{{ asset('/portada/images/logo4.png') }}" alt="logo" ></a>
+                    <a class="navbar-brand" href="#" style="padding: 2px;"><img src="{{ asset('portada/images/logo4.png') }}" alt="logo" ></a>
                 </div>
                 
-                <div class="collapse navbar-collapse navbar-right">
+                <div class="navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="#home">INICIO</a></li>
+                        <li class="active"><a href="#home">INICIO</a></li>
                         
-                        <li class="scroll"><a href="#services"> DEVELOPMENT</a></li>
-                        <li class="scroll"><a href="#portfolio"> LEARNING</a></li>
-                        <li class="scroll"><a href="#about"> SOLUTIONS</a></li>
+                        <li class=""><a href="#services"> DEVELOPMENT</a></li>
+                        <li class=""><a href="#portfolio"> LEARNING</a></li>
+                        <li class=""><a href="#about"> SOLUTIONS</a></li>
                         
-                        <li class="scroll"><a href="#get-in-touch">CONTACTO</a></li>
-
-
-                        <li class="scroll">
+                        <li class=""><a href="#get-in-touch">CONTACTO</a></li>
                             @if (Route::has('login'))
                                     @if (Auth::check())
-                                     <li class="scroll">
+                                     <li class="">
                                         <a href="{{ url('/home') }}">ACCEDER</a>
-                                    </li> 
+                                    </li>
                                     @else
-                                         <li class="scroll">
+                                         <li class="">
                                              <a href="{{ url('/login') }}">LOGIN</a>
                                          </li>
                                     @endif
                            @endif
-                        </li>  
                                    
                     </ul>
                     <form class="navbar-form navbar-left" id="formProfile" >
@@ -213,7 +205,7 @@
                 </div>
 
             </div><!--/.container-->
-            <div class="container"><div style="width:10px" id="google_translate_element"></div><script type="text/javascript">
+            <div class="container"><div style="display: none; width:10px" id="google_translate_element"></div><script type="text/javascript">
                     function googleTranslateElementInit() {
                         new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
                     }
@@ -375,77 +367,82 @@
 
             <div class="row">
                 <div class="features">
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-line-chart"></i>
+                    <div class="row">
+                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-line-chart"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">PAGINAS WEB</h4>
+                                    <p>Creación de páginas web empresariales especializadas para cada tipo de negocio</p>
+                                </div>
                             </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">PAGINAS WEB</h4>
-                                <p>Creación de páginas web empresariales especializadas para cada tipo de negocio</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+                        </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-cubes"></i>
+                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-cubes"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">SISTEMAS INTEGRADOS</h4>
+                                    <p>Creación de sistemas web para mejorar la gestión de las distintas áreas de su empresa</p>
+                                </div>
                             </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SISTEMAS INTEGRADOS</h4>
-                                <p>Creación de sistemas web para mejorar la gestión de las distintas áreas de su empresa</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+                        </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-pie-chart"></i>
+                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-pie-chart"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">INFRAESTRUCTURA TI</h4>
+                                    <p>Venta de equipos tecnológicos y de TI para que tengan una mejor infraestructura</p>
+                                </div>
                             </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">INFRAESTRUCTURA TI</h4>
-                                <p>Venta de equipos tecnológicos y de TI para que tengan una mejor infraestructura</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bar-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">ANDROID / iOS</h4>
-                                <p>Creación de aplicaciones Android y IOS para gestión de sus tareas</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+                        </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-language"></i>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-bar-chart"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">ANDROID / iOS</h4>
+                                    <p>Creación de aplicaciones Android y IOS para gestión de sus tareas</p>
+                                </div>
                             </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">BASE DE DATOS</h4>
-                                <p>Creación y administración de bases de datos para su organización</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+                        </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bullseye"></i>
+                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-language"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">BASE DE DATOS</h4>
+                                    <p>Creación y administración de bases de datos para su organización</p>
+                                </div>
                             </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">GESTIÓN </h4>
-                                <p>Asesoramiento en la actualización o creación de su área de TI </p>
+                        </div><!--/.col-md-4-->
+
+                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-bullseye"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">GESTIÓN </h4>
+                                    <p>Asesoramiento en la actualización o creación de su área de TI </p>
+                                </div>
                             </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+                        </div><!--/.col-md-4-->
+
+                    </div>
                 </div>
             </div><!--/.row-->    
         </div><!--/.container-->
@@ -472,7 +469,7 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/01.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3 Item >Android Studio</h3>
+                            <h3>Android Studio</h3>
                             Trabajamos con aplicaciones moviles
                             <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
@@ -518,7 +515,7 @@
                         <div class="portfolio-info">
                             <h3>Progrmacion iOS</h3>
                             Abarcamos todos los dispositivos
-                            <a class="preview" href="{{ asset('/portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -529,29 +526,29 @@
                         <div class="portfolio-info">
                             <h3>PHP 7</h3>
                             Ahora en costos de licenciamiento
-                            <a class="preview" href="{{ asset('/portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item creative portfolio">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{ asset('/portada/images/portfolio/07.jpg') }}" alt="">
+                        <img class="img-responsive" src="{{ asset('portada/images/portfolio/07.jpg') }}" alt="">
                         <div class="portfolio-info">
                             <h3>Java</h3>
                             Programacion orientada a objetos en escritorio
-                            <a class="preview" href="{{ asset('/portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item corporate">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{ asset('/portada/images/portfolio/08.jpg') }}" alt="">
+                        <img class="img-responsive" src="{{ asset('portada/images/portfolio/08.jpg') }}" alt="">
                         <div class="portfolio-info">
                             <h3>Python</h3>
                             Sintaxis limpia
-                            <a class="preview" href="{{ asset('/portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -686,7 +683,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('/portada/images/team/01.jpg') }}" alt="">
+                            <img class="img-responsive" src="{{ asset('portada/images/team/01.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Bin Burhan</h3>
@@ -704,7 +701,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('/portada/images/team/02.jpg') }}" alt="">
+                            <img class="img-responsive" src="{{ asset('portada/images/team/02.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Jane Man</h3>
@@ -722,7 +719,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('/portada/images/team/03.jpg') }}" alt="">
+                            <img class="img-responsive" src="{{ asset('portada/images/team/03.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Pahlwan</h3>
@@ -740,7 +737,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('/portada/images/team/04.jpg') }}" alt="">
+                            <img class="img-responsive" src="{{ asset('portada/images/team/04.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Nasir uddin</h3>
@@ -867,13 +864,13 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <p><img class="img-circle img-thumbnail" src="{{ asset('/portada/images/testimonial/01.jpg') }}" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/01.jpg') }}" alt=""></p>
                                 <h4>Antony Luis Gomez</h4>
                                 <small>Diseño grafico y FrontEnd worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                             <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="{{ asset('/portada/images/testimonial/01.jpg') }}" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/01.jpg') }}" alt=""></p>
                                 <h4>Xiomara Mendez Gutierrez</h4>
                                 <small>Administradora, Contadora worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -922,20 +919,21 @@
                               <abbr title="Phone">P:</abbr> (123) 456-7890
                             </address>
 
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                            <form id="contact-form" action="{{ url('/contact') }}" name="contact-form" method="post">
+                                {{ csrf_field() }}
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                    <input type="text" name="name" class="form-control" placeholder="Nombre" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                    <input type="email" name="email" class="form-control" placeholder="Correo" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                    <input type="text" name="subject" class="form-control" placeholder="Asunto" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                                    <textarea name="mensaje" class="form-control" rows="8" placeholder="Mensaje" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <button type="submit" id="send" data-url="{{ url('/contact') }}" class="btn btn-primary">Enviar mensaje</button>
                             </form>
                         </div>
                     </div>
@@ -1049,20 +1047,17 @@
         </div>
     </div>
 
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-    <script src="{{ asset('/portada/js/jquery.js') }}"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="{{ asset('/portada/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('/portada/js/mousescroll.js') }}"></script>
-    <script src="{{ asset('/portada/js/smoothscroll.js') }}"></script>
-    <script src="{{ asset('/portada/js/jquery.prettyPhoto.js') }}"></script>
-    <script src="{{ asset('/portada/js/jquery.isotope.min.js') }}"></script> <script src="{{ asset('portada/js/jquery.inview.min.js') }}"></script>
-    <script src="{{ asset('/portada/js/wow.min.js') }}"></script>
-    <script src="{{ asset('/portada/js/main.js') }}"></script>
-    <script src="{{ asset('/js/inscription/profile.js') }}"></script>
+    <script src="{{ asset('portada/js/jquery.js') }}"></script>
+    <script src="{{ asset('portada/js/bootstrap.min.js') }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2WcRbg2v5iuQsY-92sw7U2AttUefQ2PQ"></script>
+    <script src="{{ asset('portada/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('portada/js/mousescroll.js') }}"></script>
+    <script src="{{ asset('portada/js/smoothscroll.js') }}"></script>
+    <script src="{{ asset('portada/js/jquery.prettyPhoto.js') }}"></script>
+    <script src="{{ asset('portada/js/jquery.isotope.min.js') }}"></script> <script src="{{ asset('portada/js/jquery.inview.min.js') }}"></script>
+    <script src="{{ asset('portada/js/wow.min.js') }}"></script>
+    <script src="{{ asset('portada/js/main.js') }}"></script>
+    <script src="{{ asset('js/inscription/profile.js') }}"></script>
 </body>
+
 </html>

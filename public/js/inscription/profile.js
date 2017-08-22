@@ -2,6 +2,9 @@
  * Created by JGONZALES on 15/07/2017.
  */
 jQuery(function (){
+
+    $('#contact-form').on('submit', sendEmail);
+
     modalProfile  = $('#modalProfile');
 
     $('[data-profile]').on('click',showModalProfile);
@@ -9,6 +12,30 @@ jQuery(function (){
 });
 
 var modalProfile;
+
+function sendEmail() {
+    event.preventDefault();
+    var url = $('#send').data('url');
+    $.ajax({
+            url: url,
+            data: new FormData(this),
+            dataType: "JSON",
+            processData: false,
+            contentType: false,
+            method: 'POST'
+        })
+        .done(function( response ) {
+            if(response.error){
+                alert(response.message);
+            }
+            else{
+                alert(response.message);
+                setTimeout(function(){
+                    location.reload();
+                }, 100);
+            }
+        });
+}
 
 function showModalProfile()
 {
