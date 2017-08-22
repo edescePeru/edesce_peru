@@ -678,7 +678,7 @@
     <section id="meet-team">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Conoce nuestro equipo</h2>
+                <h2 class="section-title text-center wow fadeInDown">Conoce nuestros Proyectos</h2>
                 <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
 
@@ -948,7 +948,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2014 Your Company. Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
+                    &copy; 2017. Designed by <a target="_blank" href="http://www.edesce.com/" title="edesce.com">edesce.com</a>
                 </div>
                 <div class="col-sm-6">
                     <ul class="social-icons">
