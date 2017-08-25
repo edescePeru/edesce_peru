@@ -1043,7 +1043,7 @@
                             </div>
 
                             <div class="text-center">
-                                <a id="pdf-file" class="btn btn-success btn-sm" href="" target="_blank">Descargar PDF
+                                <a id="pdf-file" class="btn btn-success btn-sm" href="" target="_blank">Visualizar certificado
                                 </a>
                             </div>
 
