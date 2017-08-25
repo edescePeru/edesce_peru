@@ -1042,6 +1042,11 @@
                                 </div>
                             </div>
 
+                            <div class="text-center">
+                                <a id="pdf-file" class="btn btn-success btn-sm" href="" target="_blank">Descargar PDF
+                                </a>
+                            </div>
+
                         </fieldset>
                         <div class="modal-footer">
                             <div class="text-center">

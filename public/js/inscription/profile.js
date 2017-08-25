@@ -56,6 +56,7 @@ function showModalProfile()
                 modalProfile.find('[id=date]').val(data[0].date);
                 modalProfile.find('[id=modality]').val(data[0].inscription_modality);
                 modalProfile.find('[id=score]').val(data[0].score);
+                modalProfile.find('[id=pdf-file]').attr("href","assets/certificados/"+data[0].file_pdf);
                 modalProfile.modal('show');
             } else {
                 var error = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button> <span><strong>Advertencia: No hay datos de esta inscripción</strong> {{ $error }}</span> </div>'
