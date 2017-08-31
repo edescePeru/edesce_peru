@@ -689,7 +689,7 @@
                             <h3>Tu Carga</h3>
                             <span>Sistema Web y Movil</span>
                         </div>
-                        <p>Gestión de transportistas y de carga en tiempo real, contemplado para dispositivos web y movil</p>
+                        <p>Gestión de Clientes, Transportistas  y de carga en tiempo real, contemplado para dispositivos web y movil</p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
