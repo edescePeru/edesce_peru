@@ -93,6 +93,10 @@
             height: 538px;
         }
 
+        .img-course{
+            border:2px solid #1a1a1a;
+        }
+
 
         @media only screen and (min-width: 768px){
             #main-menu.navbar-default .navbar-nav > li > a {
@@ -683,7 +687,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('portada/images/team/1.jpg') }}" alt="">
+                            <img class="img-responsive img-course" src="{{ asset('portada/images/team/1.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Tu Carga</h3>
@@ -701,7 +705,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('portada/images/team/2.jpg') }}" alt="">
+                            <img class="img-responsive img-course" src="{{ asset('portada/images/team/2.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Coemp Perú SAC</h3>
@@ -719,7 +723,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('portada/images/team/3.jpg') }}" alt="">
+                            <img class="img-responsive img-course" src="{{ asset('portada/images/team/3.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Contruye Peru SAC</h3>
@@ -737,7 +741,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('portada/images/team/4.jpg') }}" alt="">
+                            <img class="img-responsive img-course" src="{{ asset('portada/images/team/4.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>E STORE EIRL</h3>
