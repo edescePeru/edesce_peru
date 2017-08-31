@@ -94,7 +94,7 @@
         }
 
         .img-course{
-            border:2px solid #1a1a1a;
+            border:2px solid rgba(26, 82, 138, 0.58);
         }
 
 
