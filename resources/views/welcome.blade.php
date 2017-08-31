@@ -865,31 +865,31 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/02.png') }}" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/2.png') }}" alt=""></p>
                                 <h4>Antony Luis Gomez</h4>
                                 <small>Diseño grafico y FrontEnd worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                             <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/05.png') }}" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/5.png') }}" alt=""></p>
                                 <h4>Xiomara Mendez Gutierrez</h4>
                                 <small>Administradora, Contadora worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                             <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/01.png') }}" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/1.png') }}" alt=""></p>
                                 <h4>Remso Rojas Guevara</h4>
                                 <small>Analista de Base de Datos worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                             <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/04.png') }}" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/4.png') }}" alt=""></p>
                                 <h4>Jorge Gonzales Castillo</h4>
                                 <small>Analista programador - Back-end worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                             <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/03.png') }}" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/3.png') }}" alt=""></p>
                                 <h4>Milagros Guarniz Cueva</h4>
                                 <small>Analista Programador Back-end worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
