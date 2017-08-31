@@ -905,25 +905,25 @@
 
     <section id="contact">
         <iframe
-                width="600"
-                height="450"
+                width="100%"
+                height="630"
                 frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA2WcRbg2v5iuQsY-92sw7U2AttUefQ2PQ
     &q=edesce+trujillo+peru" allowfullscreen>
         </iframe>
-        <div id="google-map" style="height:650px" data-latitude="-8.1110305" data-longitude="-79.0284436" data-zoom="100"></div>
-        <div class="container-wrapper">
+        {{--<div id="google-map" style="height:650px" data-latitude="-8.1110305" data-longitude="-79.0284436" data-zoom="100"></div>
+        --}}<div class="container-wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-8">
                         <div class="contact-form">
-                            <h3>Contact Info</h3>
+                            <h3>Informacion de contacto</h3>
 
                             <address>
-                              <strong>Twitter, Inc.</strong><br>
-                              795 Folsom Ave, Suite 600<br>
-                              San Francisco, CA 94107<br>
-                              <abbr title="Phone">P:</abbr> (123) 456-7890
+                              <strong>EDESCE, Inc.</strong><br>
+                              Jr Gamarra 553, Centro Historico<br>
+                              Trujillo, Perú<br>
+                              <abbr title="Phone">P:</abbr> (044) 564358
                             </address>
 
                             <form id="contact-form" action="{{ url('/contact') }}" name="contact-form" method="post">
