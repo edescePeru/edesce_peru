@@ -876,19 +876,19 @@
                                 <small>Administradora, Contadora worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
-                            <div class="item active">
+                            <div class="item">
                                 <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/01.png') }}" alt=""></p>
                                 <h4>Remso Rojas Guevara</h4>
                                 <small>Analista de Base de Datos worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
-                            <div class="item active">
+                            <div class="item">
                                 <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/04.png') }}" alt=""></p>
                                 <h4>Jorge Gonzales Castillo</h4>
                                 <small>Analista programador - Back-end worker</small>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
-                            <div class="item active">
+                            <div class="item">
                                 <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/03.png') }}" alt=""></p>
                                 <h4>Milagros Guarniz Cueva</h4>
                                 <small>Analista Programador Back-end worker</small>
