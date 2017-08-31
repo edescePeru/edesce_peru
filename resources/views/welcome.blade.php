@@ -689,7 +689,7 @@
                             <h3>Tu Carga</h3>
                             <span>Sistema Web y Movil</span>
                         </div>
-                        <p>Gestión de transportistas y de carga en tiempo real</p>
+                        <p>Gestión de transportistas y de carga en tiempo real, contemplado para dispositivos web y movil</p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -704,7 +704,7 @@
                             <img class="img-responsive" src="{{ asset('portada/images/team/2.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
-                            <h3>Compromiso Empresarial SAC</h3>
+                            <h3>Coemp Perú SAC</h3>
                             <span>Página web corporativa</span>
                         </div>
                         <p>Informativa Con formulario de contacto para que puedan interactuar en cualquier momento con ellos</p>
@@ -743,7 +743,7 @@
                             <h3>E STORE EIRL</h3>
                             <span>Sistema web e-comerce</span>
                         </div>
-                        <p>Sistema web completo de e-comerce - Contempla carrito de compras ,sistema de pagos, transferencias bancarias , uso de paypal y Visa via PayU.
+                        <p>Sistema web completo de e-comerce - Contempla carrito de compras ,sistema de pagos, transferencias bancarias , uso de paypal y Visa.
                         </p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
