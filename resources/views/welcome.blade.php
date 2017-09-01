@@ -93,6 +93,10 @@
             height: 538px;
         }
 
+        .img-course{
+            border:2px solid rgba(26, 82, 138, 0.58);
+        }
+
 
         @media only screen and (min-width: 768px){
             #main-menu.navbar-default .navbar-nav > li > a {
@@ -675,7 +679,7 @@
     <section id="meet-team">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Conoce nuestro equipo</h2>
+                <h2 class="section-title text-center wow fadeInDown">Conoce nuestros Proyectos</h2>
                 <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
 
@@ -683,13 +687,13 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('portada/images/team/01.jpg') }}" alt="">
+                            <img class="img-responsive img-course" src="{{ asset('portada/images/team/1.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
-                            <h3>Bin Burhan</h3>
-                            <span>Co-Founder</span>
+                            <h3>Tu Carga</h3>
+                            <span>Sistema Web y Movil</span>
                         </div>
-                        <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                        <p>Gestión de Clientes, Transportistas  y de carga en tiempo real, contemplado para dispositivos web y movil</p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -701,13 +705,13 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('portada/images/team/02.jpg') }}" alt="">
+                            <img class="img-responsive img-course" src="{{ asset('portada/images/team/2.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
-                            <h3>Jane Man</h3>
-                            <span>Project Manager</span>
+                            <h3>Coemp Perú SAC</h3>
+                            <span>Página web corporativa</span>
                         </div>
-                        <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                        <p>Informativa Con formulario de contacto para que puedan interactuar en cualquier momento con ellos</p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -719,13 +723,13 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('portada/images/team/03.jpg') }}" alt="">
+                            <img class="img-responsive img-course" src="{{ asset('portada/images/team/3.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
-                            <h3>Pahlwan</h3>
-                            <span>Designer</span>
+                            <h3>Contruye Peru SAC</h3>
+                            <span>Pagina web corporativa</span>
                         </div>
-                        <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                        <p>Informativa Con formulario de contacto para que puedan interactuar en cualquier momento con ellos</p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -737,13 +741,14 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{ asset('portada/images/team/04.jpg') }}" alt="">
+                            <img class="img-responsive img-course" src="{{ asset('portada/images/team/4.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
-                            <h3>Nasir uddin</h3>
-                            <span>UI/UX</span>
+                            <h3>E STORE EIRL</h3>
+                            <span>Sistema web e-comerce</span>
                         </div>
-                        <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                        <p>Sistema web completo de e-comerce - Contempla carrito de compras ,sistema de pagos, transferencias bancarias , uso de paypal y Visa.
+                        </p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -864,16 +869,34 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/01.jpg') }}" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/2.png') }}" alt=""></p>
                                 <h4>Antony Luis Gomez</h4>
                                 <small>Diseño grafico y FrontEnd worker</small>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>--}}
                             </div>
                             <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/01.jpg') }}" alt=""></p>
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/5.png') }}" alt=""></p>
                                 <h4>Xiomara Mendez Gutierrez</h4>
                                 <small>Administradora, Contadora worker</small>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>--}}
+                            </div>
+                            <div class="item">
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/1.png') }}" alt=""></p>
+                                <h4>Remso Rojas Guevara</h4>
+                                <small>Analista de Base de Datos worker</small>
+                                {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>--}}
+                            </div>
+                            <div class="item">
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/4.png') }}" alt=""></p>
+                                <h4>Jorge Gonzales Castillo</h4>
+                                <small>Analista programador - Back-end worker</small>
+                                {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>--}}
+                            </div>
+                            <div class="item">
+                                <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/3.png') }}" alt=""></p>
+                                <h4>Milagros Guarniz Cueva</h4>
+                                <small>Analista Programador Back-end worker</small>
+                                {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>--}}
                             </div>
                         </div>
 
@@ -897,33 +920,33 @@
     <section id="get-in-touch">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Get in Touch</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown">Comunicate con nosotros</h2>
+                <p class="text-center wow fadeInDown">Llena el siguiente formulario de contacto y en breves momentos nos contactaremos con usted. Todas nuestras redes sociales estan a su dispocicion en todo momento.<br>Tenemos oficinas ubicadas en  Jiron Gamarra 553 - Trujillo - Perú</p>
             </div>
         </div>
     </section><!--/#get-in-touch-->
 
     <section id="contact">
         <iframe
-                width="600"
-                height="450"
+                width="100%"
+                height="630"
                 frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA2WcRbg2v5iuQsY-92sw7U2AttUefQ2PQ
     &q=edesce+trujillo+peru" allowfullscreen>
         </iframe>
-        <div id="google-map" style="height:650px" data-latitude="-8.1110305" data-longitude="-79.0284436" data-zoom="100"></div>
-        <div class="container-wrapper">
+        {{--<div id="google-map" style="height:650px" data-latitude="-8.1110305" data-longitude="-79.0284436" data-zoom="100"></div>
+        --}}<div class="container-wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-8">
                         <div class="contact-form">
-                            <h3>Contact Info</h3>
+                            <h3>Informacion de contacto</h3>
 
                             <address>
-                              <strong>Twitter, Inc.</strong><br>
-                              795 Folsom Ave, Suite 600<br>
-                              San Francisco, CA 94107<br>
-                              <abbr title="Phone">P:</abbr> (123) 456-7890
+                              <strong>EDESCE, Inc.</strong><br>
+                              Jr Gamarra 553, Centro Historico<br>
+                              Trujillo, Perú<br>
+                              <abbr title="Phone">P:</abbr> (044) 564358
                             </address>
 
                             <form id="contact-form" action="{{ url('/contact') }}" name="contact-form" method="post">
@@ -953,11 +976,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2014 Your Company. Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
+                    &copy; 2017. Designed by <a target="_blank" href="http://www.edesce.com/" title="edesce.com">edesce.com</a>
                 </div>
                 <div class="col-sm-6">
                     <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/EDESCE-Development-101906400450270/?ref=br_rs"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
