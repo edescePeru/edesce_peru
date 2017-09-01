@@ -7,7 +7,8 @@ jQuery(function (){
     modalScore = $('#modalScore');
     modalPdf      = $('#modalPdf');
     modalDelete    = $('#modalDelete');
-    $('[data-inscription]').on('click',showModalInscription);
+    $(document).on("click", "[data-inscription]", showModalInscription);
+    //$('[data-inscription]').on('click',showModalInscription);
     $('[data-score]').on('click',showModalScore);
     $('[data-pdf]').on('click',showModalPdf);
     $('[data-delete]').on('click',showModalDelete);
