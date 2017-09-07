@@ -9,9 +9,12 @@ jQuery(function (){
     modalDelete    = $('#modalDelete');
     $(document).on("click", "[data-inscription]", showModalInscription);
     //$('[data-inscription]').on('click',showModalInscription);
-    $('[data-score]').on('click',showModalScore);
-    $('[data-pdf]').on('click',showModalPdf);
-    $('[data-delete]').on('click',showModalDelete);
+    //$('[data-score]').on('click',showModalScore);
+    $(document).on("click", "[data-score]", showModalScore);
+    $(document).on("click", "[data-pdf]", showModalPdf);
+    //$('[data-pdf]').on('click',showModalPdf);
+    $(document).on("click", "[data-delete]", showModalDelete);
+    //$('[data-delete]').on('click',showModalDelete);
 
     $('#formRegister').on('submit',inscription);
     $('#formScore').on('submit',inscription);
