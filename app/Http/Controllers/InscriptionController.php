@@ -121,6 +121,7 @@ class InscriptionController extends Controller
             $array[$k]['inscription_modality'] = $inscription->modality;
             $array[$k]['score'] = $inscription->details[0]->score;
             $array[$k]['file_pdf'] = $inscription->details[0]->file_pdf;
+            $array[$k]['file_pdf2'] = $inscription->details[0]->file_pdf2;
             $k++;
         }
         //dd($array);
@@ -190,6 +191,7 @@ class InscriptionController extends Controller
             $array[$k]['inscription_modality'] = $inscription->modality;
             $array[$k]['score'] = $inscription->details[0]->score;
             $array[$k]['file_pdf'] = $inscription->details[0]->file_pdf;
+            $array[$k]['file_pdf2'] = $inscription->details[0]->file_pdf2;
             $k++;
         }
         //dd($array);
@@ -238,6 +240,32 @@ class InscriptionController extends Controller
         $fileName = $file_pdf->getClientOriginalName();
         $file_pdf->move($path, $fileName);
         $inscriptionDetail->file_pdf = $fileName;
+        $inscriptionDetail->save();
+
+        return response()->json(['error'=>false,'message'=>'Pdf subido correctamente']);
+
+    }
+
+    public function pdfD(Request $request){
+        if( Auth()->user()->role_id != 1 )
+            return redirect('/');
+
+        $id    = $request->get('id');
+        $file_pdf    = $request->file('file_pdf2');
+        $subject  = $request->get('id_subject');
+
+        $inscriptionDetail = InscriptionDetail::where('inscription_id', $id)->where('subject_id', $subject)->first();
+
+        // Si el detalle ya tiene un pdf asociado se debe eliminar y reemplazar por el que viene
+
+        if (!$request->hasFile('file_pdf2'))
+            return response()->json(['error'=>true,'message'=>'Ocurrió un error al subir la imagen.']);
+
+        $path = public_path().'/assets/certificados2';
+        $extension = $file_pdf->getClientOriginalExtension();
+        $fileName = $file_pdf->getClientOriginalName();
+        $file_pdf->move($path, $fileName);
+        $inscriptionDetail->file_pdf2 = $fileName;
         $inscriptionDetail->save();
 
         return response()->json(['error'=>false,'message'=>'Pdf subido correctamente']);

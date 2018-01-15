@@ -79,11 +79,22 @@
                             <td>
                                 <button class="btn btn-success btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-score="{{ $array[$i]['inscription_id']  }}">Calificar
                                 </button>
-                                <button class="btn btn-primary btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-pdf="{{ $array[$i]['inscription_id']  }}">Subir pdf
-                                </button>
+                                @if ($array[$i]['file_pdf']==null)
+                                    <button class="btn btn-primary btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-pdf="{{ $array[$i]['inscription_id']  }}">Subir pdf
+                                    </button>
+                                @endif
+                                @if ($array[$i]['file_pdf2']==null)
+                                    <button class="btn btn-primary btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-pdfD="{{ $array[$i]['inscription_id']  }}">Subir pdf 2
+                                    </button>
+                                @endif
+
                                 @if ($array[$i]['file_pdf']!=null)
-                                <a class="btn btn-danger btn-sm" href="{{ asset('assets/certificados/'.$array[$i]['file_pdf']) }}" target="_blank">Descargar PDF
-                                </a>
+                                    <a class="btn btn-danger btn-sm" href="{{ asset('assets/certificados/'.$array[$i]['file_pdf']) }}" target="_blank">Descargar PDF
+                                    </a>
+                                @endif
+                                @if ($array[$i]['file_pdf2']!=null)
+                                    <a class="btn btn-danger btn-sm" href="{{ asset('assets/certificados2/'.$array[$i]['file_pdf2']) }}" target="_blank">Descargar PDF 2
+                                    </a>
                                 @endif
                                 <button class="btn btn-danger btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-delete="{{ $array[$i]['inscription_id']  }}">Eliminar
                                 </button>
@@ -184,6 +195,41 @@
                             <label class="col-md-4 control-label">Subir pdf</label>
                             <div class="col-md-6">
                                 <input type="file" class="form-control" name="file_pdf" accept="application/pdf" >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div  id="modalPdf2" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <h4>Subir certificado Desarrollador</h4>
+                    </div>
+                </div>
+
+                <form id="formPdf2" action="{{ url('inscription/pdfD') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
+                    <div style="margin-bottom: 10px; margin-top: 10px;" class="col-md-10 col-md-offset-1" id="message_pdf"></div>
+
+                    <div class="modal-body">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                        <input type="hidden" name="id" id="id">
+                        <input type="hidden" name="id_subject" id="id_subject">
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Subir pdf</label>
+                            <div class="col-md-6">
+                                <input type="file" class="form-control" name="file_pdf2" accept="application/pdf" >
                             </div>
                         </div>
 

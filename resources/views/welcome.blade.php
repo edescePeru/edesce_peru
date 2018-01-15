@@ -1070,6 +1070,11 @@
                                 </a>
                             </div>
 
+                            <div class="text-center">
+                                <a id="pdf-file2" class="btn btn-success btn-sm" href="" target="_blank">Visualizar certificado desarrollador
+                                </a>
+                            </div>
+
                         </fieldset>
                         <div class="modal-footer">
                             <div class="text-center">
