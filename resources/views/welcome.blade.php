@@ -1070,6 +1070,8 @@
                                 </a>
                             </div>
 
+                            <br>
+
                             <div class="text-center">
                                 <a id="pdf-file2" class="btn btn-success btn-sm" href="" target="_blank">Visualizar certificado desarrollador
                                 </a>
