@@ -56,10 +56,10 @@ function showModalProfile()
                 modalProfile.find('[id=date]').val(data[0].date);
                 modalProfile.find('[id=modality]').val(data[0].inscription_modality);
                 modalProfile.find('[id=score]').val(data[0].score);
-                if (data[0].file_pdf!=null || data[0].file_pdf!=""){
+                if (data[0].file_pdf!=null){
                     modalProfile.find('[id=pdf-file]').attr("href","assets/certificados/"+data[0].file_pdf);
                 }
-                if (data[0].file_pdf2!=null || data[0].file_pdf2!=""){
+                if (data[0].file_pdf2!=null){
                     modalProfile.find('[id=pdf-file2]').attr("href","assets/certificados2/"+data[0].file_pdf2);
                 }
 
