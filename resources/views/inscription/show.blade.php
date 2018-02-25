@@ -80,11 +80,11 @@
                                 <button class="btn btn-success btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-score="{{ $array[$i]['inscription_id']  }}">Calificar
                                 </button>
                                 @if ($array[$i]['file_pdf']==null)
-                                    <button class="btn btn-primary btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-pdf="{{ $array[$i]['inscription_id']  }}">Subir pdf
+                                    <button class="btn btn-primary btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-pdf="{{ $array[$i]['inscription_id']  }}">Subir pdf Asist
                                     </button>
                                 @endif
                                 @if ($array[$i]['file_pdf2']==null)
-                                    <button class="btn btn-primary btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-pdfD="{{ $array[$i]['inscription_id']  }}">Subir pdf 2
+                                    <button class="btn btn-primary btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-pdfD="{{ $array[$i]['inscription_id']  }}">Subir pdf Desar
                                     </button>
                                 @endif
 
