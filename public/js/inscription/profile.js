@@ -56,8 +56,13 @@ function showModalProfile()
                 modalProfile.find('[id=date]').val(data[0].date);
                 modalProfile.find('[id=modality]').val(data[0].inscription_modality);
                 modalProfile.find('[id=score]').val(data[0].score);
-                modalProfile.find('[id=pdf-file]').attr("href","assets/certificados/"+data[0].file_pdf);
-                modalProfile.find('[id=pdf-file2]').attr("href","assets/certificados2/"+data[0].file_pdf2);
+                if (data[0].file_pdf!=null || data[0].file_pdf!=""){
+                    modalProfile.find('[id=pdf-file]').attr("href","assets/certificados/"+data[0].file_pdf);
+                }
+                if (data[0].file_pdf2!=null || data[0].file_pdf2!=""){
+                    modalProfile.find('[id=pdf-file2]').attr("href","assets/certificados2/"+data[0].file_pdf2);
+                }
+
                 modalProfile.modal('show');
             } else {
                 var error = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button> <span><strong>Advertencia: No hay datos de esta inscripción</strong> {{ $error }}</span> </div>'
