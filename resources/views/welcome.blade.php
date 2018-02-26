@@ -43,7 +43,6 @@
         .clearfix{
             color: #ffffff;
             font-size: 14px;
-            /*font-family: Roboto;*/
             /*font-weight: bold;*/
         }
 
