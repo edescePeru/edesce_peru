@@ -151,7 +151,7 @@
                                 <select name="subject" id="subject" required class="form-control">
                                     <option value="0">Seleccione curso</option>
                                     @foreach( $subjects as $subject )
-                                        <option value="{{ $subject->id }}">{{ $subject->name }} {{ $subject->level }}</option>
+                                        <option value="{{ $subject->id }}">{{ $subject->name }}</option>
                                     @endforeach
                                 </select>
                             </div>
