@@ -186,7 +186,7 @@ class InscriptionController extends Controller
             $array[$k]['student_code'] = $inscription->users->code;
             $array[$k]['subject_id'] = $inscription->details[0]->subject_id;
             $subject = Subject::find($inscription->details[0]->subject_id);
-            $array[$k]['subject'] = $subject->name . " " . $subject->level;
+            $array[$k]['subject'] = $subject->name;
             $array[$k]['date'] = $inscription->created_at->format('Y-m-d');
             $array[$k]['inscription_modality'] = $inscription->modality;
             $array[$k]['score'] = $inscription->details[0]->score;
