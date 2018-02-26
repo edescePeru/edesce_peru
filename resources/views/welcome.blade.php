@@ -209,12 +209,7 @@
                 </div>
 
             </div><!--/.container-->
-            <div class="container"><div style="display: none; width:10px" id="google_translate_element"></div><script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-                    }
-                </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            </div>
+
         </nav><!--/nav-->
 
     </header><!--/header-->
