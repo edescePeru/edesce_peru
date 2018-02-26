@@ -976,7 +976,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2017. Designed by <a target="_blank" href="http://www.edesce.com/" title="edesce.com">edesce.com</a>
+                    &copy; 2017. Designed by <a target="_blank" href="https://www.edesce.com/" title="edesce.com">edesce.com</a>
                 </div>
                 <div class="col-sm-6">
                     <ul class="social-icons">
