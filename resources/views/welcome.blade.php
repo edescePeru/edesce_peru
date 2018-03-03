@@ -469,7 +469,7 @@
                         <div class="portfolio-info">
                             <h3>Android Studio</h3>
                             Trabajamos con aplicaciones moviles
-                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/01.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -480,7 +480,7 @@
                         <div class="portfolio-info">
                             <h3>ASP.NET</h3>
                             Trabajamos con herramientas microsoft
-                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/02.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -491,7 +491,7 @@
                         <div class="portfolio-info">
                             <h3>SQL Server</h3>
                             Mantenga su data segura con nostros
-                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/03.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -502,7 +502,7 @@
                         <div class="portfolio-info">
                             <h3>Laravel</h3>
                             Usamos los framework mas seguros del mercado
-                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/04.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -513,7 +513,7 @@
                         <div class="portfolio-info">
                             <h3>Progrmacion iOS</h3>
                             Abarcamos todos los dispositivos
-                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/05.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -524,7 +524,7 @@
                         <div class="portfolio-info">
                             <h3>PHP 7</h3>
                             Ahora en costos de licenciamiento
-                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/06.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -535,7 +535,7 @@
                         <div class="portfolio-info">
                             <h3>Java</h3>
                             Programacion orientada a objetos en escritorio
-                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/07.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
@@ -546,7 +546,7 @@
                         <div class="portfolio-info">
                             <h3>Python</h3>
                             Sintaxis limpia
-                            <a class="preview" href="{{ asset('portada/images/portfolio/full.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{ asset('portada/images/portfolio/08.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
