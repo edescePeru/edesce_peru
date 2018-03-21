@@ -78,12 +78,12 @@
                         </a>
                     </div>
 
-                    <div>
+                    {{--<div>
                         <a href="{{url('/register')}}" class="user-signup-link">
                             No te has registrado?
                             <i class="ace-icon fa fa-arrow-right"></i>
                         </a>
-                    </div>
+                    </div>--}}
                 </div>
             </div><!-- /.widget-body -->
         </div><!-- /.login-box -->
