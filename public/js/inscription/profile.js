@@ -18,7 +18,7 @@ function sendEmail() {
     var url = $('#send').data('url');
     $.ajax({
             url: url,
-            data: new FormData(this),
+            data: $(this).serializeArray(),
             dataType: "JSON",
             processData: false,
             contentType: false,
