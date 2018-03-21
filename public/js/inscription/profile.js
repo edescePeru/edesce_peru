@@ -1,6 +1,3 @@
-/**
- * Created by JGONZALES on 15/07/2017.
- */
 $(document).ready(function() {
 
     $('#contact-form').on('submit', sendEmail);
