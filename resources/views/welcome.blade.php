@@ -943,7 +943,7 @@
                               <abbr title="Phone">P:</abbr> (044) 564358
                             </address>
 
-                            <form id="contact-form" name="contact-form">
+                            <form id="contact-form" name="contact-form" method="post">
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" placeholder="Nombre" required>
@@ -957,7 +957,7 @@
                                 <div class="form-group">
                                     <textarea name="mensaje" class="form-control" rows="8" placeholder="Mensaje" required></textarea>
                                 </div>
-                                <button type="button" id="send" data-url="{{ url('/contact') }}" class="btn btn-primary">Enviar mensaje</button>
+                                <button type="submit" id="send" data-url="{{ url('/contact') }}" class="btn btn-primary">Enviar mensaje</button>
                             </form>
                         </div>
                     </div>
