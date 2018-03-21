@@ -943,7 +943,7 @@
                               <abbr title="Phone">P:</abbr> (044) 564358
                             </address>
 
-                            <form id="contact-form" action="{{ url('/contact')  }}" name="contact-form" method="post">
+                            <form id="contact-form" action="{{ url('contact')  }}" name="contact-form" method="post">
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" placeholder="Nombre" required>
