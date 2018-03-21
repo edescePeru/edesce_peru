@@ -1,7 +1,7 @@
 /**
  * Created by JGONZALES on 15/07/2017.
  */
-jQuery(function (){
+$(document).ready(function() {
 
     $('#contact-form').on('submit', sendEmail);
 
