@@ -957,7 +957,7 @@
                                 <div class="form-group">
                                     <textarea name="mensaje" class="form-control" rows="8" placeholder="Mensaje" required></textarea>
                                 </div>
-                                <button type="submit" id="send" data-url="{{ url('/contact') }}" class="btn btn-primary">Enviar mensaje</button>
+                                <button type="button" id="send" data-url="{{ url('/contact') }}" class="btn btn-primary">Enviar mensaje</button>
                             </form>
                         </div>
                     </div>
