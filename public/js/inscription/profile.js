@@ -15,7 +15,7 @@ var modalProfile;
 
 function sendEmail() {
     event.preventDefault();
-    var url = $('#send').data('url');
+    var url = $(this).attr('action');
     $.ajax({
             url: url,
             data: $(this).serializeArray(),
