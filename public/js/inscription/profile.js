@@ -17,10 +17,7 @@ function sendEmail() {
     console.log(url);
     $.ajax({
             url: url,
-            data: {
-                "_token": "{{ csrf_token() }}",
-                "data": data
-            },
+            data: data,
             dataType: "JSON",
             processData: false,
             contentType: false,
