@@ -13,10 +13,14 @@ var modalProfile;
 function sendEmail() {
     event.preventDefault();
     var url = $(this).attr('action');
+    var data =  $(this).serializeArray();
     console.log(url);
     $.ajax({
             url: url,
-            data: $(this).serializeArray(),
+            data: {
+                "_token": "{{ csrf_token() }}",
+                "data": data
+            },
             dataType: "JSON",
             processData: false,
             contentType: false,
