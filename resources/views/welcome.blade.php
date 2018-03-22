@@ -943,22 +943,7 @@
                               <abbr title="Phone">P:</abbr> (044) 564358
                             </address>
 
-                            <form id="contact-form" action="{{ url('contact')  }}" name="contact-form" method="post">
-                                <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Nombre" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Correo" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Asunto" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="mensaje" class="form-control" rows="8" placeholder="Mensaje" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-                            </form>
+                            
                         </div>
                     </div>
                 </div>
