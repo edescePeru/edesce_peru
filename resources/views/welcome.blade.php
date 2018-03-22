@@ -944,7 +944,7 @@
                             </address>
 
                             <form id="contact-form" action="{{ url('contact')  }}" name="contact-form" method="post">
-                                {{ csrf_field() }}
+                                <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" placeholder="Nombre" required>
                                 </div>
