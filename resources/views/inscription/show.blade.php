@@ -50,6 +50,7 @@
                         <th>Modalidad</th>
                         <th class="hidden-480">Fecha Inscrip.</th>
                         <th class="hidden-480">Nota</th>
+                        <th class="hidden-480">DNI alumno</th>
                         <th class="hidden-480">Accion</th>
                     </tr>
                     </thead>
@@ -75,6 +76,9 @@
                             </td>
                             <td>
                                 {{ $array[$i]['score'] }}
+                            </td>
+                            <td>
+                                {{ $array[$i]['student_dni'] }}
                             </td>
                             <td>
                                 <button class="btn btn-success btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-score="{{ $array[$i]['inscription_id']  }}">Calificar
@@ -275,7 +279,7 @@
                                 bAutoWidth: false,
                                 "aoColumns": [
                                     { "bSortable": false },
-                                    null, null,null, null, null, null,null, null
+                                    null, null,null, null, null, null,null, null, null
                                 ],
                                 "aaSorting": [],
 

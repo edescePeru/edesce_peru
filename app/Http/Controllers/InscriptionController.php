@@ -184,6 +184,7 @@ class InscriptionController extends Controller
             $array[$k]['inscription_code'] = $inscription->code;
             $array[$k]['student'] = $inscription->users->name . " " . $inscription->users->surname;
             $array[$k]['student_code'] = $inscription->users->code;
+            $array[$k]['student_dni'] = $inscription->users->dni;
             $array[$k]['subject_id'] = $inscription->details[0]->subject_id;
             $subject = Subject::find($inscription->details[0]->subject_id);
             $array[$k]['subject'] = $subject->name;
