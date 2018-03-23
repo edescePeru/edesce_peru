@@ -93,12 +93,12 @@
                                 @endif
 
                                 @if ($array[$i]['file_pdf']!=null)
-                                    <a class="btn btn-danger btn-sm" href="{{ asset('assets/certificados/'.$array[$i]['file_pdf']) }}" target="_blank">Descargar PDF
-                                    </a>
+                                    <button class="btn btn-primary btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-pdf="{{ $array[$i]['inscription_id']  }}">Editar pdf Asist
+                                    </button>
                                 @endif
                                 @if ($array[$i]['file_pdf2']!=null)
-                                    <a class="btn btn-danger btn-sm" href="{{ asset('assets/certificados2/'.$array[$i]['file_pdf2']) }}" target="_blank">Descargar PDF 2
-                                    </a>
+                                    <button class="btn btn-primary btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-pdfD="{{ $array[$i]['inscription_id']  }}">Editar pdf Desar
+                                    </button>
                                 @endif
                                 <button class="btn btn-danger btn-sm" data-subject = "{{ $array[$i]['subject_id'] }}" data-delete="{{ $array[$i]['inscription_id']  }}">Eliminar
                                 </button>
@@ -223,7 +223,7 @@
                 </div>
 
                 <form id="formPdf2" action="{{ url('inscription/pdfD') }}" class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
-                    <div style="margin-bottom: 10px; margin-top: 10px;" class="col-md-10 col-md-offset-1" id="message_pdf"></div>
+                    <div style="margin-bottom: 10px; margin-top: 10px;" class="col-md-10 col-md-offset-1" id="message_pdf2"></div>
 
                     <div class="modal-body">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />

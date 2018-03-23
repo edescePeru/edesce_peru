@@ -167,14 +167,14 @@ function inscription_pdf2()
                     '<button type="button" class="close" data-dismiss="alert">×</button>'+
                     '<span><strong>Advertencia: </strong>'+response.message+'</span>'+
                     '</div>';
-                $('#message_pdf').html(error);
+                $('#message_pdf2').html(error);
             }else{
                 var mensaje = '<div class="alert alert-success">'+
                     '<button type="button" class="close" data-dismiss="alert">×</button>'+
                     '<span><strong>Éxito: </strong>'+response.message+'</span><br/>'+
                     '<span>Recargando la página en 4 seg.</span>'+
                     '</div>';
-                $('#message_pdf').html(mensaje);
+                $('#message_pdf2').html(mensaje);
                 setTimeout(function(){
                     location.reload();
                 }, 4000);

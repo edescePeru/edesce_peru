@@ -117,7 +117,7 @@ class InscriptionController extends Controller
             $array[$k]['subject_id'] = $inscription->details[0]->subject_id;
             $array[$k]['student_dni'] = $inscription->users->dni;
             $subject = Subject::find($inscription->details[0]->subject_id);
-            $array[$k]['subject'] = $subject->name . " " . $subject->level;
+            $array[$k]['subject'] = $subject->name;
             $array[$k]['date'] = $inscription->created_at;
             $array[$k]['inscription_modality'] = $inscription->modality;
             $array[$k]['score'] = $inscription->details[0]->score;
@@ -233,7 +233,14 @@ class InscriptionController extends Controller
         $inscriptionDetail = InscriptionDetail::where('inscription_id', $id)->where('subject_id', $subject)->first();
 
         // Si el detalle ya tiene un pdf asociado se debe eliminar y reemplazar por el que viene
-        
+        if ($inscriptionDetail->file_pdf != null){
+            $filename = $inscriptionDetail->file_pdf;
+            $path = public_path().'/assets/certificados/'.$filename;
+            unlink($path);
+            $inscriptionDetail->file_pdf = null;
+            $inscriptionDetail->save();
+        }
+
         if (!$request->hasFile('file_pdf'))
             return response()->json(['error'=>true,'message'=>'Ocurrió un error al subir la imagen.']);
 
@@ -259,6 +266,13 @@ class InscriptionController extends Controller
         $inscriptionDetail = InscriptionDetail::where('inscription_id', $id)->where('subject_id', $subject)->first();
 
         // Si el detalle ya tiene un pdf asociado se debe eliminar y reemplazar por el que viene
+        if ($inscriptionDetail->file_pdf2 != null){
+            $filename = $inscriptionDetail->file_pdf2;
+            $path = public_path().'/assets/certificados2/'.$filename;
+            unlink($path);
+            $inscriptionDetail->file_pdf2 = null;
+            $inscriptionDetail->save();
+        }
 
         if (!$request->hasFile('file_pdf2'))
             return response()->json(['error'=>true,'message'=>'Ocurrió un error al subir la imagen.']);
