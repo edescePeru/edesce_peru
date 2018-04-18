@@ -186,7 +186,8 @@
                         <li class=""><a href="#about"> SOLUTIONS</a></li>
 
                         <li class=""><a target="_blank" href="https://www.swarbox.com/product/categoria/subcategoria.php?subcategoria=Diplomado"> PAGAR</a></li>
-                        
+                        <li class=""><a target="_blank" href="https://www.paypal.me/edesce"> PAG0 EXTRANGERO</a></li>
+
                         <li class=""><a href="#get-in-touch">CONTACTO</a></li>
                             {{--@if (Route::has('login'))
                                     @if (Auth::check())
