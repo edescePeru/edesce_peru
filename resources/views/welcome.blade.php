@@ -928,7 +928,7 @@
             <div class="row">
                 <div class="features">
                     <div class="row">
-                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
                             <div class="media service-box">
                                 <div class="pull-left">
                                     <i class="fa fa-line-chart"></i>
@@ -939,34 +939,9 @@
                                 </div>
                             </div>
                         </div><!--/.col-md-4-->
-
-                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                            <div class="media service-box">
-                                <div class="pull-left">
-                                    <i class="fa fa-cubes"></i>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">SISTEMAS INTEGRADOS</h4>
-                                    <p>Creación de sistemas web para mejorar la gestión de las distintas áreas de su empresa</p>
-                                </div>
-                            </div>
-                        </div><!--/.col-md-4-->
-
-                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                            <div class="media service-box">
-                                <div class="pull-left">
-                                    <i class="fa fa-pie-chart"></i>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">INFRAESTRUCTURA TI</h4>
-                                    <p>Venta de equipos tecnológicos y de TI para que tengan una mejor infraestructura</p>
-                                </div>
-                            </div>
-                        </div><!--/.col-md-4-->
-
                     </div>
                     <div class="row">
-                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
                             <div class="media service-box">
                                 <div class="pull-left">
                                     <i class="fa fa-bar-chart"></i>
@@ -977,31 +952,6 @@
                                 </div>
                             </div>
                         </div><!--/.col-md-4-->
-
-                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
-                            <div class="media service-box">
-                                <div class="pull-left">
-                                    <i class="fa fa-language"></i>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">BASE DE DATOS</h4>
-                                    <p>Creación y administración de bases de datos para su organización</p>
-                                </div>
-                            </div>
-                        </div><!--/.col-md-4-->
-
-                        <div class="col-md-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                            <div class="media service-box">
-                                <div class="pull-left">
-                                    <i class="fa fa-bullseye"></i>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">GESTIÓN </h4>
-                                    <p>Asesoramiento en la actualización o creación de su área de TI </p>
-                                </div>
-                            </div>
-                        </div><!--/.col-md-4-->
-
                     </div>
                 </div>
             </div><!--/.row-->
