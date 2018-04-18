@@ -184,9 +184,11 @@
                         <li class=""><a href="#services"> DEVELOPMENT</a></li>
                         <li class=""><a href="#portfolio"> LEARNING</a></li>
                         <li class=""><a href="#about"> SOLUTIONS</a></li>
+
+                        <li class=""><a href="#about"> PAGAR</a></li>
                         
                         <li class=""><a href="#get-in-touch">CONTACTO</a></li>
-                            @if (Route::has('login'))
+                            {{--@if (Route::has('login'))
                                     @if (Auth::check())
                                      <li class="">
                                         <a href="{{ url('/home') }}">ACCEDER</a>
@@ -196,7 +198,7 @@
                                              <a href="{{ url('/login') }}">LOGIN</a>
                                          </li>
                                     @endif
-                           @endif
+                           @endif--}}
                                    
                     </ul>
                     <form class="navbar-form navbar-left" id="formProfile" >
