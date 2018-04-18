@@ -914,8 +914,11 @@
     </section><!--/#testimonial-->
 
     <section id="pay" >
+        <br>
+        <br>
         <div class="container">
-
+            <br>
+            <br>
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Pagos</h2>
                 <p class="text-center wow fadeInDown">Tenemos plataformas para realizar pagos tanto nacionales como internacionales</p>
