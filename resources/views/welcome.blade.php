@@ -185,7 +185,7 @@
                         <li class=""><a href="#portfolio"> LEARNING</a></li>
                         <li class=""><a href="#about"> SOLUTIONS</a></li>
 
-                        <li class=""><a href="https://www.swarbox.com/product/categoria/subcategoria.php?subcategoria=Diplomado"> PAGAR</a></li>
+                        <li class=""><a target="_blank" href="https://www.swarbox.com/product/categoria/subcategoria.php?subcategoria=Diplomado"> PAGAR</a></li>
                         
                         <li class=""><a href="#get-in-touch">CONTACTO</a></li>
                             {{--@if (Route::has('login'))
