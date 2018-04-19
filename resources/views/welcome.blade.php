@@ -934,21 +934,21 @@
                                     <i class="fa fa-line-chart"></i>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">PAGINAS WEB</h4>
-                                    <p>Creación de páginas web empresariales especializadas para cada tipo de negocio</p>
+                                    <h4 class="media-heading">PAGOS NACIONALES</h4>
+                                    <p>Use la plataforma de Payu para agilizar el proceso y asegurar el pago correcto.</p>
+                                    <a class="btn btn-success" target="_blank" href="https://www.swarbox.com/product/categoria/subcategoria.php?subcategoria=Diplomado">PAGAR EN PAYU</a>
                                 </div>
                             </div>
                         </div><!--/.col-md-4-->
-                    </div>
-                    <div class="row">
                         <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
                             <div class="media service-box">
                                 <div class="pull-left">
                                     <i class="fa fa-bar-chart"></i>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">ANDROID / iOS</h4>
-                                    <p>Creación de aplicaciones Android y IOS para gestión de sus tareas</p>
+                                    <h4 class="media-heading">PAGOS INTERNACIONALES</h4>
+                                    <p>Use la plataforma de Paypal</p>
+                                    <a class="btn btn-primary" target="_blank" href="https://www.paypal.me/edesce">PAGAR EN PAYPAL</a>
                                 </div>
                             </div>
                         </div><!--/.col-md-4-->
