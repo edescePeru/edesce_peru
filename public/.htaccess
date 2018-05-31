@@ -18,3 +18,8 @@
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
+order allow,deny
+deny from 172.68.182.209
+deny from 5.157.96.66
+deny from 52.16.21.24
+allow from all
