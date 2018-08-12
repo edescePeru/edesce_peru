@@ -143,7 +143,7 @@
                         <div class="pull-right xs-pull-left">
                             <ul class="top_bar_info clearfix">
                                 <li class="hidden-info">
-                                    <i class="fa fa-clock-o"></i> Lun - Sab 9:00 - 20:00
+                                    <i class="fa fa-clock-o"></i> Lun - Sab. 9:00 - 20:00
                                 </li>
                                 <li>
                                     <i class="fa fa-mobile"></i> 989 975 412 /  
@@ -289,7 +289,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-9">
-                    <h2>Empresa de desarollo de software, consultoría y especialización</h2>
+                    <h2>Empresa de desarrollo de software, consultoría y especialización</h2>
                     <p>Somos una empresa dedicada a la creación de sistemas de información empresarial con amplia experiencia en el mercado local
                         Creamos software empresarial para brindar soluciones integrales pensadas para cada tipo de negocio.
                         Brindamos soluciones empresariales usando tecnologías de información creando software a medida y proporcionando asesorías.
@@ -306,7 +306,11 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">NOSOTROS</h2>
-                <p class="text-center wow fadeInDown">Somos una empresa dedicada a la creación de sistemas de información empresarial con amplia experiencia en el mercado local.</br> Brindamos soluciones empresariales usando tecnologia de informacion creando software a medida y proporcionando asesorias.</p>
+                <p class="text-center wow fadeInDown">
+                    Somos una empresa dedicada a la creación de sistemas de información empresarial con amplia experiencia en el mercado local.
+                    </br> 
+                    Brindamos soluciones empresariales usando tecnología de información creando software a medida y proporcionando asesorías.
+                </p>
             </div>
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
@@ -470,7 +474,7 @@
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/01.jpg') }}" alt="">
                         <div class="portfolio-info">
                             <h3>Android Studio</h3>
-                            Trabajamos con aplicaciones moviles
+                            Trabajamos con aplicaciones móviles
                             <a class="preview" href="{{ asset('portada/images/portfolio/01.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -481,7 +485,7 @@
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/02.jpg') }}" alt="">
                         <div class="portfolio-info">
                             <h3>ASP.NET</h3>
-                            Trabajamos con herramientas microsoft
+                            Trabajamos con herramientas Microsoft
                             <a class="preview" href="{{ asset('portada/images/portfolio/02.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -492,7 +496,7 @@
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/03.jpg') }}" alt="">
                         <div class="portfolio-info">
                             <h3>SQL Server</h3>
-                            Mantenga su data segura con nostros
+                            Mantenga su data segura con nosotros
                             <a class="preview" href="{{ asset('portada/images/portfolio/03.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -503,7 +507,7 @@
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/04.jpg') }}" alt="">
                         <div class="portfolio-info">
                             <h3>Laravel</h3>
-                            Usamos los framework mas seguros del mercado
+                            Usamos los frameworks más seguros del mercado
                             <a class="preview" href="{{ asset('portada/images/portfolio/04.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -513,7 +517,7 @@
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/05.jpg') }}" alt="">
                         <div class="portfolio-info">
-                            <h3>Progrmacion iOS</h3>
+                            <h3>Programación iOS</h3>
                             Abarcamos todos los dispositivos
                             <a class="preview" href="{{ asset('portada/images/portfolio/05.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
@@ -536,7 +540,7 @@
                         <img class="img-responsive" src="{{ asset('portada/images/portfolio/07.jpg') }}" alt="">
                         <div class="portfolio-info">
                             <h3>Java</h3>
-                            Programacion orientada a objetos en escritorio
+                            Programación orientada a objetos en escritorio
                             <a class="preview" href="{{ asset('portada/images/portfolio/07.jpg') }}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -797,20 +801,20 @@
                         </ul>
                         <div id="tab-content" class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="tab1" aria-labelledby="tab1">
-                                <p>Desarrollamos aplicaicones web personales y empresariales. Muchas empresas </p>
-                                <p>confian en nostros para crearles plataformas que se adecuen con sus requerimientos</p>
+                                <p>Desarrollamos aplicaciones web personales y empresariales. Muchas empresas </p>
+                                <p>cconfían en nosotros para crearles plataformas que se adecuen con sus requerimientos.</p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab2">
-                                <p>Desarrollamos aplicacion moviles Android/iOS que se adecuen con sus requerimientos</p>
+                                <p>Desarrollamos aplicacion móviles en Android/iOS que se adecuen con sus requerimientos</p>
                                 <p>Tenemos 4 aplicaciones empresariales creadas y 6 aplicaciones personales que avalan nuestra efectividad</p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="tab3">
-                                <p>Desarrollamos aplicaciones de escritorio para integrarse con multiples entornos de intranet manejados con gestores de </p>
-                                <p>Bases de datos licenciadas como no licenciadas. Otorgandole seguridad y confianza al usar.</p>
+                                <p>Desarrollamos aplicaciones de escritorio para integrarse con múltiples entornos de intranet manejados con gestores de </p>
+                                <p>Bases de datos licenciadas como no licenciadas. Otorgándole seguridad y confianza al usar.</p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab4" aria-labelledby="tab3">
-                                <p>Trabajamos con distintas bases de datos licenciadas y no licenciadas. Logramos con estas optimizar sus procesos de guardado y gestion de informacion</p>
-                                <p>Tenemos a su dispocicion MySQL server , SQL server, Oracle , MongoDB, MariaDB, Casandra DB, Access</p>
+                                <p>Trabajamos con distintas bases de datos licenciadas y no licenciadas. Logramos con estas optimizar sus procesos de guardado y gestión de información</p>
+                                <p>Tenemos a su dispocicion MySQL server , SQL server, Oracle , MongoDB, MariaDB, Casandra DB y Access</p>
                             </div>
                         </div>
                     </div>
@@ -867,31 +871,31 @@
                             <div class="item active">
                                 <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/2.png') }}" alt=""></p>
                                 <h4>Antony Luis Gomez</h4>
-                                <small>Diseño grafico y FrontEnd worker</small>
+                                <small>Diseño gráfico y FrontEnd Worker</small>
                                 {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>--}}
                             </div>
                             <div class="item">
                                 <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/5.png') }}" alt=""></p>
                                 <h4>Xiomara Mendez Gutierrez</h4>
-                                <small>Administradora, Contadora worker</small>
+                                <small>Administradora & Contadora worker</small>
                                 {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>--}}
                             </div>
                             <div class="item">
                                 <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/1.png') }}" alt=""></p>
                                 <h4>Remso Rojas Guevara</h4>
-                                <small>Analista de Base de Datos worker</small>
+                                <small>Analista de Base de Datos Worker</small>
                                 {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>--}}
                             </div>
                             <div class="item">
                                 <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/4.png') }}" alt=""></p>
                                 <h4>Jorge Gonzales Castillo</h4>
-                                <small>Analista programador - Back-end worker</small>
+                                <small>Analista programador - Back-end Worker</small>
                                 {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>--}}
                             </div>
                             <div class="item">
                                 <p><img class="img-circle img-thumbnail" src="{{ asset('portada/images/testimonial/3.png') }}" alt=""></p>
                                 <h4>Milagros Guarniz Cueva</h4>
-                                <small>Analista Programador Back-end worker</small>
+                                <small>Analista Programador Back-end Worker</small>
                                 {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>--}}
                             </div>
                         </div>
@@ -935,7 +939,7 @@
                                 </div>
                                 <div class="media-body">
                                     <h4 class="media-heading">PAGOS NACIONALES</h4>
-                                    <p>Use la plataforma de Payu para agilizar el proceso y asegurar el pago correcto.</p>
+                                    <p>Use la plataforma de PayU para agilizar el proceso y asegurar el pago correcto.</p>
                                     <a class="btn btn-success" target="_blank" href="https://www.swarbox.com/product/categoria/subcategoria.php?subcategoria=Diplomado">PAGAR EN PAYU</a>
                                 </div>
                             </div>
@@ -981,11 +985,11 @@
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-8">
                         <div class="contact-form">
-                            <h3>Informacion de contacto</h3>
+                            <h3>Información de contacto</h3>
 
                             <address>
                               <strong>EDESCE, Inc.</strong><br>
-                              Jr Gamarra 553, Centro Historico<br>
+                              Jr. Gamarra 553, Centro Histórico<br>
                               Trujillo, Perú<br>
                               <abbr title="Phone">P:</abbr> (044) 564358
                             </address>
