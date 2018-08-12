@@ -727,7 +727,7 @@
                             <img class="img-responsive img-course" src="{{ asset('portada/images/team/3.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
-                            <h3>Construye Peru SAC</h3>
+                            <h3>Construye Peru</h3>
                             <span>Página web corporativa</span>
                         </div>
                         <p>Informativa con formulario de contacto para que puedan interactuar en cualquier momento con ellos</p>
