@@ -378,7 +378,7 @@
                                     <i class="fa fa-line-chart"></i>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">PAGINAS WEB</h4>
+                                    <h4 class="media-heading">PÁGINAS WEB</h4>
                                     <p>Creación de páginas web empresariales especializadas para cada tipo de negocio</p>
                                 </div>
                             </div>
@@ -564,8 +564,9 @@
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Conocenos un poco mejor</h2>
-                <p class="text-center wow fadeInDown">En EDESCE EIRL - Empresa de Desarrollo de Software Consultoria y Especializacion  <br> Nos dedicamos a que tu negocio se consolide en el mercado actual dandole posicionamiento, infraestructura para diferenciarlo de la competencia <br> En un mundo donde la tecnologia marca el ritmo del crecimeinto empresarial te brindamos asesoramiento en la  pre y post venta al adquirir tu sistema integrado</p>
+                <h2 class="section-title text-center wow fadeInDown">Conócenos un poco mejor</h2>
+                <p class="text-center wow fadeInDown">En EDESCE EIRL - Empresa de Desarrollo de Software Consultoria y Especializacion  <br> Nos dedicamos a que tu negocio se consolide en el mercado actual dandole posicionamiento, infraestructura para diferenciarlo de la competencia <br> 
+                    En un mundo donde la tecnología marca el ritmo del crecimiento empresarial te brindamos asesoramiento en la  pre y post venta al adquirir tu sistema integrado</p>
             </div>
 
             <div class="row">
@@ -726,10 +727,10 @@
                             <img class="img-responsive img-course" src="{{ asset('portada/images/team/3.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
-                            <h3>Contruye Peru SAC</h3>
-                            <span>Pagina web corporativa</span>
+                            <h3>Construye Peru SAC</h3>
+                            <span>Página web corporativa</span>
                         </div>
-                        <p>Informativa Con formulario de contacto para que puedan interactuar en cualquier momento con ellos</p>
+                        <p>Informativa con formulario de contacto para que puedan interactuar en cualquier momento con ellos</p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -744,7 +745,7 @@
                             <img class="img-responsive img-course" src="{{ asset('portada/images/team/4.jpg') }}" alt="">
                         </div>
                         <div class="team-info">
-                            <h3>E STORE EIRL</h3>
+                            <h3>SWARBOX</h3>
                             <span>Sistema web e-comerce</span>
                         </div>
                         <p>Sistema web completo de e-comerce - Contempla carrito de compras ,sistema de pagos, transferencias bancarias , uso de paypal y Visa.
