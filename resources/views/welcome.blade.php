@@ -17,7 +17,7 @@
     <link href="{{ asset('portada/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('portada/css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('portada/css/responsive.css') }}" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" integrity="sha512-6S2HWzVFxruDlZxI3sXOZZ4/eJ8AcxkQH1+JjSe/ONCEqR9L4Ysq5JdT5ipqtzU7WHalNwzwBv+iE51gNHJNqQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="icon" href="{{ asset('portada/images/ico/edesce.png') }}" type="image">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('portada/images/ico/apple-touch-icon-144-precomposed.png') }}">
@@ -184,6 +184,7 @@
                         <li class=""><a href="#services"> DEVELOPMENT</a></li>
                         <li class=""><a href="#portfolio"> LEARNING</a></li>
                         <li class=""><a href="#about"> SOLUTIONS</a></li>
+                        <li class=""><a href="#course"> CURSOS</a></li>
 
                         <li class=""><a href="#pay"> PAGOS</a></li>
 
@@ -232,6 +233,25 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
+                                    <h2>CURSOS   <span>FRECUENTES</span></h2>
+                                    <p><b>INICIO: </b> El curso para la certificación internacional de SCRUM MASTER el 03 de Diciembre.</p>
+                                    <p><b>MODALIDAD: </b> La modalidad es VIRTUAL en Streaming online en vivo - Transmisión en directo. Así podrás interactuar con el ponente y consultarle todas tus dudas.</p>
+                                    <a class="btn btn-primary btn-lg" href="#course">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!--/.item-->
+
+            {{--<div class="item" style="background-image: url(portada/images/slider/learning.png);">
+
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
                                     <h2>EDESCE   <span>LEARNING</span></h2>
                                     <p><b>MISIÓN: </b> Formar y especializar a nuestros clientes para el logro de sus objetivos profesionales utilizando la tecnología e innovación.</p>
                                     <p><b>VISIÓN: </b> Para el 2020, ser reconocida como una de las principales empresas en ofrecer cursos de especialización para el logro de los objetivos profesionales de nuestros clientes</p>
@@ -243,7 +263,7 @@
                 </div>
                 
             </div><!--/.item-->
-
+--}}
             <div class="item" style="background-image: url(portada/images/slider/development.png);   background-position: 88% 0;">
             
                 <div class="slider-inner">
@@ -284,6 +304,67 @@
 
         </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->
+
+    <section id="course">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">CURSOS FRECUENTES</h2>
+                {{--<p class="text-center wow fadeInDown">
+                    Somos una empresa dedicada a la creación de sistemas de información empresarial con amplia experiencia en el mercado local.
+                    </br>
+                    Brindamos soluciones empresariales usando tecnología de información creando software a medida y proporcionando asesorías.
+                </p>--}}
+            </div>
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="{{ asset('portada/images/curso_scrum_master.jpg') }}" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">INICIO</h4>
+                            <p>Iniciamos El curso para la certificación internacional de SCRUM MASTER el 03 de Diciembre.</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">HORARIO</h4>
+                            <p>Las clases son Lunes, Martes , jueves y viernes (de 8pm a 10pm) HORA DE PERÚ . Son 4 clases de 2 horas cada clase.</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-pie-chart"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">MODALIDAD</h4>
+                            <p>La modalidad es VIRTUAL en Streaming online en vivo - Transmisión en directo. Así podrás interactuar con el ponente y consultarle todas tus dudas.</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-bullseye"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">INVERSIÓN</h4>
+                            <p>La inversión total es de 450 USD
+                                Costa de 2 partes. (250 USD para tu preparación completa que cancelas a EDESCE) y (200 USD que usas para dar el examen internacional que cancelas a SCRUM ORG).</p>
+                        </div>
+                    </div>
+                    <div id="paypal-button-container" class="col-sm-12"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="cta" class="wow fadeIn">
         <div class="container">
@@ -1138,6 +1219,83 @@
     <script src="{{ asset('portada/js/wow.min.js') }}"></script>
     <script src="{{ asset('portada/js/main.js') }}"></script>
     <script src="{{ asset('js/inscription/profile.js') }}"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id={{ env('PAYPAL_CLIENT_ID') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js" integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script >
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    application_context: {
+                        shipping_preference: "NO_SHIPPING"
+                    },
+                    purchase_units: [{
+                        amount: {
+                            currency_code: "USD", // Establecer la moneda a USD
+                            value: '1.00' // Cobrar $100
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                fetch('/paypal/process/' + data.orderID)
+                    .then(res => res.json())
+                    .then(function(response) {
+                        // Mostrar un mensaje de error si la respuesta indica un fallo
+                        if (!response.success) {
+                            const failureMessage = 'Lo sentimos, no se pudo procesar tu transacción.';
+                            toastr.error(response.message, 'Error !!',
+                                {
+                                    "closeButton": false,
+                                    "debug": false,
+                                    "newestOnTop": false,
+                                    "progressBar": false,
+                                    "positionClass": "toast-top-right",
+                                    "preventDuplicates": false,
+                                    "onclick": null,
+                                    "showDuration": "300",
+                                    "hideDuration": "1000",
+                                    "timeOut": "2000",
+                                    "extendedTimeOut": "1000",
+                                    "showEasing": "swing",
+                                    "hideEasing": "linear",
+                                    "showMethod": "fadeIn",
+                                    "hideMethod": "fadeOut"
+                                }
+                            );
+                            return;
+                        }
+
+                        // Función para manejar el pago exitoso
+                        processSuccessfulPayment(response);
+                    });
+            }
+        }).render('#paypal-button-container');
+
+        function processSuccessfulPayment(response) {
+            toastr.success(response.message, 'Éxito !!',
+                {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "2000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+            );
+            setTimeout(function () {
+                //location.reload();
+            }, 2000);
+        }
+    </script>
 </body>
 
 </html>

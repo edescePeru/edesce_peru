@@ -42,3 +42,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('profile/data/{code}', 'InscriptionController@showProfile');
 
 Route::post('/contact', 'MailController@send');
+
+Route::get('/paypal/process/{orderId}', 'PayPalCardController@process')->name('paypal.process');
