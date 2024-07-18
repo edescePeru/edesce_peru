@@ -4,8 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Edesce ofrece servicios de creación de software a medida. Desarrollamos soluciones personalizadas para tus necesidades específicas.">
+    <meta name="keywords" content="desarrollo de software, software a medida, soluciones personalizadas, desarrollo de aplicaciones, software custom">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Edesce">
+    <meta name="language" content="es-ES">
+    <meta name="refresh" content="0; URL=https://edesce.com">
+    <meta name="canonical" content="https://edesce.com">
+    <meta property="og:title" content="Edesce">
+    <meta property="og:description" content="Edesce ofrece servicios de creación de software a medida">
+    <meta property="og:image" content="https://edesce.com/logo.png">
+    <meta property="og:url" content="https://edesce.com">
+    <meta name="twitter:title" content="Edesce">
+    <meta name="twitter:description" content="Edesce ofrece servicios de creación de software a medida">
+    <meta name="twitter:image" content="https://edesce.com/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+
     <title>EDESCE</title>
     
     <!-- CSS -->
@@ -114,7 +129,15 @@
 
 
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFETP5GEYY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-FFETP5GEYY');
+    </script>
 </head><!--/head-->
 
 <body id="home" class="homepage">
